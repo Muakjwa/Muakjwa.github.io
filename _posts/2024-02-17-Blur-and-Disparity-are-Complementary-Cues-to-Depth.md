@@ -3,7 +3,7 @@ title: Blur and Disparity are Complementary Cues to Depth
 author: sunwoo
 date: 2024-02-17 00:00:00 +0800
 categories: [Research, Sight Model]
-tags: [blur, disparity, eye, sight model]
+tags: [blur]
 ---
 
 # 논문 요약
@@ -35,11 +35,11 @@ blur는 이미지나 물체의 가장자리가 선명하지 않고 부드럽게 
 
 # Theorical result
 
-![Figure 1. Geometry of Disparity and Blur ](Blur%20and%20Disparity%20are%20Complementary%20Cues%20to%20Depth%20add3f34427e041538d2e9644bc01628c/Untitled.png)
+![Figure 1. Geometry of Disparity and Blur ](/assets/img/post/Geometry_of_Disparity_and_Blur(1).png)
 
 Figure 1. Geometry of Disparity and Blur 
 
-![Untitled](Blur%20and%20Disparity%20are%20Complementary%20Cues%20to%20Depth%20add3f34427e041538d2e9644bc01628c/Untitled%201.png)
+![Untitled](/assets/img/post/Geometry_of_Disparity_and_Blur(2).png)
 
 User가 초점을 두고 있는 곳과의 거리 : $z_0$
 
@@ -49,7 +49,7 @@ interocular distance (안구간 거리를 의미하며 일반적으로 62mm다.)
 
 optical center와 retina 사이의 거리 (figure 1 참조) : $s$
 
-![Equation 1](Blur%20and%20Disparity%20are%20Complementary%20Cues%20to%20Depth%20add3f34427e041538d2e9644bc01628c/Untitled%202.png)
+![Equation 1](/assets/img/post/Equation_of_Disparity_and_Blur(1).png)
 
 Equation 1
 
@@ -59,7 +59,7 @@ Equation 1
 
 (small-angle approximation로 $d$를 radians인 $\delta$로 변환하였다.)
 
-![Equation 2](Blur%20and%20Disparity%20are%20Complementary%20Cues%20to%20Depth%20add3f34427e041538d2e9644bc01628c/Untitled%203.png)
+![Equation 2](/assets/img/post/Equation_of_Disparity_and_Blur(2).png)
 
 Equation 2
 
@@ -67,7 +67,7 @@ Equation 2
 
 $A$는 pupil(동공)의 지름을 의미한다.
 
-![Equation 3](Blur%20and%20Disparity%20are%20Complementary%20Cues%20to%20Depth%20add3f34427e041538d2e9644bc01628c/Untitled%204.png)
+![Equation 3](/assets/img/post/Equation_of_Disparity_and_Blur(3).png)
 
 Equation 3
 
@@ -76,7 +76,7 @@ Equation 3
 $\delta와 d$는 disparity를 $\beta$는 blur를 표현하기 위해 사용된 기호이고,
 disparity와 blur는 서로 relationship을 갖는다. 이를 equation으로 표현하면 다음과 같다.
 
-![Equation 4](Blur%20and%20Disparity%20are%20Complementary%20Cues%20to%20Depth%20add3f34427e041538d2e9644bc01628c/Untitled%205.png)
+![Equation 4](/assets/img/post/Equation_of_Disparity_and_Blur(4).png)
 
 Equation 4
 
@@ -94,7 +94,7 @@ depth의 오차가 적은 상황에서 depth를 잘 판단한다고 볼 수 있�
 
 해당 조건들에 대해서 실험을 진행하였을 때,
 
-![Untitled](Blur%20and%20Disparity%20are%20Complementary%20Cues%20to%20Depth%20add3f34427e041538d2e9644bc01628c/Untitled%206.png)
+![Untitled](/assets/img/post/Result_of_Disparity_and_Blur.png)
 
 해당 피규어와 같은 결과가 나온다.
 
