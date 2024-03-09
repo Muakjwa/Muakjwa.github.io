@@ -4,7 +4,9 @@ author: sunwoo
 date: 2024-03-09 00:00:00 +0800
 categories: [Lecture, Computer Architecture]
 tags: [computer science]
-use_math : true
+math: true
+comments: true
+image: /asset/img/post/Performance/clock_cycle_rate_relation.png
 ---
 
 # Performance
