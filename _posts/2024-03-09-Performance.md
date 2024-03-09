@@ -6,7 +6,7 @@ categories: [Lecture, Computer Architecture]
 tags: [computer science]
 math: true
 comments: true
-image: /asset/img/post/Performance/clock_cycle_rate_relation.png
+image: /assets/img/post/Performance/clock_cycle_rate_relation.png
 ---
 
 # Performance
