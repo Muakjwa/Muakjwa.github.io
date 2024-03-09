@@ -4,6 +4,7 @@ author: sunwoo
 date: 2024-03-09 00:00:00 +0800
 categories: [Lecture, Computer Architecture]
 tags: [computer science]
+use_math : true
 ---
 
 # Performance
