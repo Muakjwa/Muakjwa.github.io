@@ -38,7 +38,7 @@ $$
 Clock\_Cycle = 1 / Clock\_Rate
 $$
 
-![clock_cycle_rate_relation](\assets\img\post\performance\clock_cycle_rate_relation.png)
+![clock_cycle_rate_relation](/assets/img/post/performance/clock_cycle_rate_relation.png)
 
 ## CPI (Clock Cycles per Instruction)
 
@@ -100,7 +100,7 @@ DVFS는 voltage와 frequency를 컴퓨터가 바쁠 때와 한가할 때, schedu
 
 고정된 frequency를 사용할 때와 달리 DVFS를 사용해 컴퓨터가 한가할 때 각 factor 사용량을 15%씩만 줄여도 기존 대비 52%의 전력만으로 작동시킬 수 있다.
 
-![performance_comparison](\assets\img\post\performance\performance_comparison.png)
+![performance_comparison](/assets/img/post/performance/performance_comparison.png)
 
 ## Multi-core Processors
 
@@ -112,22 +112,22 @@ uniprocessor로는 컴퓨터 성능 향상에 한계가 있다.
 
 ## Amdahl’s Law
 
-![Amdahl's_law](\assets\img\post\performance\Amdahl's_law.png)
+![Amdahl's_law](/assets/img/post/performance/Amdahl's_law.png)
 
 목표하는 execution time을 달성하기 위해 해당하는 affected의 execution time이 얼마나 감소해야하는지 추론할 수 있다.
 
 ## 연습문제 1
 
-![practice1](\assets\img\post\performance\practice1.png)
+![practice1](/assets/img/post/performance/practice1.png)
 
 ## 연습문제 2
 
-![practice2](\assets\img\post\performance\practice2.png)
+![practice2](/assets/img/post/performance/practice2.png)
 
 ## 연습문제 1 해설
 
-![practice1_ans](\assets\img\post\performance\practice1_ans.png)
+![practice1_ans](/assets/img/post/performance/practice1_ans.png)
 
 ## 연습문제 2 해설
 
-![practice2_ans](\assets\img\post\performance\practice2_ans.png)
+![practice2_ans](/assets/img/post/performance/practice2_ans.png)
