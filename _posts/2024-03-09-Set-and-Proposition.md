@@ -17,7 +17,7 @@ image: /assets/img/post/Set_and_Proposition/Untitled.png
 - Notation
     - $\{a, b,c\}$
     - $S = \{a,b,c\}$
-    - $S1 = \{x|x\quad is\quad a\quad student\quad at\quad DGIST\}$
+    - $S1 = \{x \|x \quad is \quad a \quad student \quad at \quad DGIST \}$
 - Venn diagram (집합을 이해하는 시각적 표현이다.) <br>
 → 모든 것을 표현하지 못하는 한계 존재<br>
 ex) 원 4개를 이용해 A와 C, B와 D의 교집합을 동시에 그릴 수 없다.
