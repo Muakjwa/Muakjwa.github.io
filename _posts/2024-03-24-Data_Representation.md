@@ -6,7 +6,7 @@ categories: [Lecture, System Programming]
 tags: [computer science]
 math: true
 comments: true
-image: /assets/img/post/Data_Representation/Untitled 1.png
+image: /assets/img/post/Data_Representation/Untitled1.png
 ---
 
 # Data Representation
@@ -56,7 +56,7 @@ LSB가 highest address를 갖는 방식이다.
 
 0x01234567의 숫자가 있을 때, 각 방식은 다음과 같이 숫자를 저장한다.
 
-![Untitled](/assets/img/post/Data_Representation/Untitled 1.png)
+![Untitled](/assets/img/post/Data_Representation/Untitled1.png)
 
 ## Data Representation
 
@@ -211,7 +211,7 @@ char s[?] = "Hello";
 
 ## Bit-level Manipulation
 
-![Untitled](/assets/img/post/Data_Representation/Untitled 2.png)
+![Untitled](/assets/img/post/Data_Representation/Untitled2.png)
 
 컴퓨터는 NAND와 NOR 연산만 가지고 모든 연산을 처리할 수 있다고 한다.
 
@@ -358,7 +358,7 @@ $$
 |T_{Min}|=T_{Max}+1,\quad U_{Max} = 2*T_{Max}+1
 $$
 
-![Untitled](/assets/img/post/Data_Representation/Untitled 3.png)
+![Untitled](/assets/img/post/Data_Representation/Untitled3.png)
 
 signed, unsigned integer는 같은 비트를 가지고 있을 때,
 절반에 대해서는 같은 값을 절반에 대해서는 $2^n,\;n=\# \;of \;bit$만큼 차이가 난다.

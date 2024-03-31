@@ -157,23 +157,23 @@ n-Tuple과 같이 n이 붙어있는 튜플은 finite한 ordered list를 의미�
 
 - Disjunction $(P\lor Q)$
 
-![Untitled](/assets/img/post/Set_and_Proposition/Untitled_1.png)
+![Untitled](/assets/img/post/Set_and_Proposition/Untitled1.png)
 
 - Conjunction $(P\land Q)$
 
-![Untitled](/assets/img/post/Set_and_Proposition/Untitled_2.png)
+![Untitled](/assets/img/post/Set_and_Proposition/Untitled2.png)
 
 - Negation $(\bar{P})$
 
-![Untitled](/assets/img/post/Set_and_Proposition/Untitled_3.png)
+![Untitled](/assets/img/post/Set_and_Proposition/Untitled3.png)
 
 - if P then Q $(P\to Q)$
 
-![Untitled](/assets/img/post/Set_and_Proposition/Untitled_4.png)
+![Untitled](/assets/img/post/Set_and_Proposition/Untitled4.png)
 
 - P if and only if Q $(P \leftrightarrow Q)$
 
-![Untitled](/assets/img/post/Set_and_Proposition/Untitled_5.png)
+![Untitled](/assets/img/post/Set_and_Proposition/Untitled5.png)
 
 compound propostion을 풀 때, 연산자 적용 순서는 다음과 같다.
 
@@ -181,7 +181,7 @@ $$
 \lor,\quad \land,\quad \bar{}\;\;,\;\;\to,\quad\leftrightarrow
 $$
 
-![Untitled](/assets/img/post/Set_and_Proposition/Untitled_6.png)
+![Untitled](/assets/img/post/Set_and_Proposition/Untitled6.png)
 
 위의 compound propostion 예시는 $P\lor Q$와 같은 결과를 가지고,
 

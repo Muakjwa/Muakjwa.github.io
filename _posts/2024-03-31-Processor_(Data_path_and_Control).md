@@ -48,7 +48,7 @@ PC의 값을 +4 update한다.
 
 (*** control signal 필요 없다 ***)
 
-![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled 1.png)
+![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled1.png)
 
 1. Decoding Instruction
 
@@ -57,20 +57,20 @@ fetch된 instruction의 opcode와 function field bit를 control unit에 전달�
 Register file에서 2개의 값을 읽는다. 
 (어떤 값을 사용할지는 control signal로 결정)
 
-![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled 2.png)
+![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled2.png)
 
 1. Executing R Format (add, sub, slt, and, or)
 
 ALU에서 연산을 진행 후, register에 결과를 
 저장한다.
 
-![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled 3.png)
+![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled3.png)
 
 1. Executing Load and Store Operation
 
 16비트 signed extended offset에 base register를 더해 memory address를 구하고, 해당 주소에 value를 저장 or 로드한다.
 
-![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled 4.png)
+![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled4.png)
 
 1. Executing Branch Operation
 
@@ -78,17 +78,17 @@ Register file에서 읽은 operand를 비교한다.
 (0인지 아닌지 = eqaulity)
 PC + signed-extended offset으로 branch한다.
 
-![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled 5.png)
+![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled5.png)
 
 1. Executing Jump Operation
 
 PC의 상위 4비트와 address 2 left shift를 합쳐 jump address로 사용한다.
 
-![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled 6.png)
+![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled6.png)
 
 1. Full Datapath
 
-![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled 7.png)
+![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled7.png)
 
 - Single cycle design
 fetch, decode, execute가 1 cycle에 완료되는 design을 의미한다.
@@ -103,4 +103,4 @@ fetch, decode, execute가 1 cycle에 완료되는 design을 의미한다.
 이와 같은 RegWrite or RegRead의 signal을 결정한다.
 2. opcode의 앞의 2bit를 보고 ALU가 add할지 subtract할지 그 외의 동작을 할지 결정한다.
 
-![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled 8.png)
+![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled8.png)

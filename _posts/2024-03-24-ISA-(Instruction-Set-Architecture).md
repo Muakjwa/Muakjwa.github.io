@@ -6,7 +6,7 @@ categories: [Lecture, Computer Architecture]
 tags: [computer science]
 math: true
 comments: true
-image: /assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 4.png
+image: /assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled4.png
 ---
 
 # ISA (Instruction Set Architecture)
@@ -39,11 +39,11 @@ Instruction은 크게 3가지 format으로 나타낼 수 있다.
 
 instruction은 registor에서 작동되고, registor는 32bit의 공간을 갖는다.
 
-![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 1.png)
+![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled1.png)
 
 MIPS instruction의 field는 다음과 같다.
 
-![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 2.png)
+![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled2.png)
 
 ## Register Operands (Arithmetic instruction)
 
@@ -60,7 +60,7 @@ MIPS는 32 X 32-bit register를 갖고 있다.
 
 레지스터는 2개의 read port와 1개의 write port를 갖는다.
 
-![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 3.png)
+![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled3.png)
 
 registor operand는 3가지 principle로 디자인 되었다.
 
@@ -96,7 +96,7 @@ Arithmetic operation을 수행할 때는 memory → register, 저장할 때는 r
 : LSB (least significant byte) - x86, DEC
 → Good for calculation
 
-![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 4.png)
+![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled4.png)
 
 ## Number of Operands 동작
 
@@ -242,13 +242,13 @@ MIPS instruction은 Regularity를 가지고 32bit binary number로 encoding된�
 산술 연산에서 주로 사용되는 instruction이다.
 ex) add $t0, $s1, $s2
 
-![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 5.png)
+![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled5.png)
 
 1. I-format
 즉각적인 arithmetic 연산이나 load/store을 담당하는 instruction format이다.
 Constant위치는 16비트를 할당받아 $-2^{n-1}\;to\;+2^{n-1}-1$ 범위를 갖는다.
 
-![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 6.png)
+![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled6.png)
 
 ## Procedure
 
@@ -346,7 +346,7 @@ array와 같은 customatic 변수도 stack에 저장되는데 이러한 공간�
 - Stack : function call, automatic storage
 - Reserved : 커널이나 예외처리를 위해 확보된 공간
 
-![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 7.png)
+![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled7.png)
 
 Memory address를 저장, 사용하는 방법으로는 여러 가지가 있지만 MIPS는 displacement mode를 사용한다.
 
@@ -398,7 +398,7 @@ branch 명령어의 경우, opcode, two register, target address를 저장한다
 j와 jal은 op code로 6비트, address로 26비트를 저장하며,
 PC의 상위 4비트와 address를 *4한 28비트를 연결하여 target address로 사용한다.
 
-![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 8.png)
+![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled8.png)
 
 ```c
 ##### C code:
@@ -481,7 +481,7 @@ compiler quantization과 같은 기법을 사용한 경우, CPI는 변화가 거
 
 성능 향상을 위해 for문 사용시 array의 index를 증가시키는 것보다 pointer 값을 증가시키는게 더 효율적이다.
 
-![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 9.png)
+![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled9.png)
 
 이처럼 index를 사용했을 때는 loop 내부에서 shift 과정이 일어나 추가적인 load가 생긴다.
 
@@ -489,4 +489,4 @@ compiler quantization과 같은 기법을 사용한 경우, CPI는 변화가 거
 
 대부분의 instruction은 machine code에 one-to-one이지만 pseudoinstruction은 아래와 같이 2개의 machine instruction으로 치환되어서 사용된다.
 
-![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled 10.png)
+![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled10.png)
