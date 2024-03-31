@@ -25,14 +25,11 @@ clocking method는 모든 state가 clock이 끝나는 순간 update되도록 한
 - state element 읽기 → combinational logic을 통해 value 보내기 → 
 결과를 하나 이상의 state element에 작성하기 (결과 update)
 
-- Multiplexer
+- Multiplexer <br>
+&emsp; 회로 상에서 2가지 선택지가 있을 때, 0, 1의 데이터로 둘 중 하나의 선택을 하게 해준다.
 
-회로 상에서 2가지 선택지가 있을 때, 0, 1의 데이터로 둘 중 하나의 선택을 하게 해준다.
-
-- Control
-
-Mux (multiplexor)나 RegWrite, Branch, MemWrite, MemRead, ALU operation 등이 
-어떻게 동작할지에 대한 signald을 생성한다.
+- Control <br>
+&emsp; Mux (multiplexor)나 RegWrite, Branch, MemWrite, MemRead, ALU operation 등이 어떻게 동작할지에 대한 signald을 생성한다.
 
 모든 instruction에 대한 hardware 구조는 다음과 같다.
 
@@ -42,15 +39,13 @@ Mux (multiplexor)나 RegWrite, Branch, MemWrite, MemRead, ALU operation 등이
 
 1. Fetching instruction
 
-주소를 읽어 instruction memory에서 instruction을 fetch해오고, 
-
-PC의 값을 +4 update한다.
+주소를 읽어 instruction memory에서 instruction을 fetch해오고, PC의 값을 +4 update한다.
 
 (*** control signal 필요 없다 ***)
 
 ![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled1.png)
 
-1. Decoding Instruction
+2. Decoding Instruction
 
 fetch된 instruction의 opcode와 function field bit를 control unit에 전달한다. (Decoding)
 
@@ -59,40 +54,40 @@ Register file에서 2개의 값을 읽는다.
 
 ![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled2.png)
 
-1. Executing R Format (add, sub, slt, and, or)
+3. Executing R Format (add, sub, slt, and, or)
 
 ALU에서 연산을 진행 후, register에 결과를 
 저장한다.
 
 ![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled3.png)
 
-1. Executing Load and Store Operation
+4. Executing Load and Store Operation
 
 16비트 signed extended offset에 base register를 더해 memory address를 구하고, 해당 주소에 value를 저장 or 로드한다.
 
 ![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled4.png)
 
-1. Executing Branch Operation
+5. Executing Branch Operation
 
-Register file에서 읽은 operand를 비교한다.
-(0인지 아닌지 = eqaulity)
+Register file에서 읽은 operand를 비교한다. <br>
+(0인지 아닌지 = eqaulity) <br>
 PC + signed-extended offset으로 branch한다.
 
 ![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled5.png)
 
-1. Executing Jump Operation
+6. Executing Jump Operation
 
 PC의 상위 4비트와 address 2 left shift를 합쳐 jump address로 사용한다.
 
 ![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled6.png)
 
-1. Full Datapath
+7. Full Datapath
 
 ![Untitled](/assets/img/post/Processor_(Data_path_and_Control)/Untitled7.png)
 
-- Single cycle design
-fetch, decode, execute가 1 cycle에 완료되는 design을 의미한다.
-( 어떤 datapath도 instruction마다 1번 이상 갈 수 없다.
+- Single cycle design <br>
+fetch, decode, execute가 1 cycle에 완료되는 design을 의미한다.<br>
+( 어떤 datapath도 instruction마다 1번 이상 갈 수 없다.<br>
  → 따라서 instruction memory, data memory, several adders로 분리하여 사용한다.)
 
 → cycle time은 longest path의 길이에 의해 결정된다.

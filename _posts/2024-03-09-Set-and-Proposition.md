@@ -17,14 +17,14 @@ image: /assets/img/post/Set_and_Proposition/Untitled.png
 - Notation
     - $\{a, b,c\}$
     - $S = \{a,b,c\}$
-    - $S1=\{x|x\;is\;a\;student\;at\;DGIST\}$
-- Venn diagram (집합을 이해하는 시각적 표현이다.)
-→ 모든 것을 표현하지 못하는 한계 존재
+    - $S1 = \{x|x\quad is\quad a\quad student\quad at\quad DGIST\}$
+- Venn diagram (집합을 이해하는 시각적 표현이다.) <br>
+→ 모든 것을 표현하지 못하는 한계 존재<br>
 ex) 원 4개를 이용해 A와 C, B와 D의 교집합을 동시에 그릴 수 없다.
 - 기본 개념
     - Set S가 a를 가지고 있을 때 : $a\in S$
     - Set에서는 순서 상관 X : $\{a,b,c\} = \{b,a,c\}$
-    - element 없는 건 Empty set : $\{\} \; or \; \phi$
+    - element 없는 건 Empty set : $\{\} \quad or \quad \phi$
     - 모든 element set은 Universal set : $U$
     - set은 set의 member가 될 수 있다. :  $\{\{a,b,c\},d\}$, $\{a,\{a\},\{\{a\}\}\}$, $\{\{\}\}$
     - Q의 모든 element가 P에 있을 때 Q는 P의 subset : 
