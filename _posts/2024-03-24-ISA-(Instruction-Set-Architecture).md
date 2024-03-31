@@ -64,18 +64,18 @@ MIPS는 32 X 32-bit register를 갖고 있다.
 
 registor operand는 3가지 principle로 디자인 되었다.
 
-1. Simplicity favors regularity
+1. Simplicity favors regularity <br>
 간결함을 위해 규칙적으로 만든다.
 적은 수의 format과 항상 첫 6비트를 opcode로 사용한다.
 regularity → simplicity → higher performance at lower cost
-2. Smaller is faster
+2. Smaller is faster <br>
 레지스터가 커지면 비용이 늘어나고, 성능이 떨어진다.
 따라서 레지스터를 32개로 제한한다.
 addressing modes의 수도 제한한다.
-3. Make the common case fast
+3. Make the common case fast <br>
 small constant 사용은 일반적인 경우이므로 더 빠르게 사용할 수 있도록 만드는게 좋다.
-ex) addi $s3, $s3, 4
-4. Good design demands good compromises
+ex) addi \$s3, \$s3, 4
+4. Good design demands good compromises <br>
 register format을 최대한 비슷하게 유지하는 것이 좋다. (3개의 format만을 사용한다.)
 다른 format은 decoding을 복잡하게 하지만, 32bit instruction을 균일하게 해준다.
 
