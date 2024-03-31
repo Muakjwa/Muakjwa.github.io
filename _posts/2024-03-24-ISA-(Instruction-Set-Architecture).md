@@ -62,21 +62,21 @@ MIPS는 32 X 32-bit register를 갖고 있다.
 
 ![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled3.png)
 
-registor operand는 3가지 principle로 디자인 되었다.
+registor operand는 4가지 principle로 디자인 되었다.
 
 1. Simplicity favors regularity <br>
-간결함을 위해 규칙적으로 만든다.
-적은 수의 format과 항상 첫 6비트를 opcode로 사용한다.
+간결함을 위해 규칙적으로 만든다. <br>
+적은 수의 format과 항상 첫 6비트를 opcode로 사용한다. <br>
 regularity → simplicity → higher performance at lower cost
 2. Smaller is faster <br>
-레지스터가 커지면 비용이 늘어나고, 성능이 떨어진다.
-따라서 레지스터를 32개로 제한한다.
+레지스터가 커지면 비용이 늘어나고, 성능이 떨어진다. <br>
+따라서 레지스터를 32개로 제한한다. <br>
 addressing modes의 수도 제한한다.
 3. Make the common case fast <br>
-small constant 사용은 일반적인 경우이므로 더 빠르게 사용할 수 있도록 만드는게 좋다.
-ex) addi \$s3, \$s3, 4
+small constant 사용은 일반적인 경우이므로 더 빠르게 사용할 수 있도록 만드는게 좋다. <br>
+ex) addi $s3, $s3, 4
 4. Good design demands good compromises <br>
-register format을 최대한 비슷하게 유지하는 것이 좋다. (3개의 format만을 사용한다.)
+register format을 최대한 비슷하게 유지하는 것이 좋다. (3개의 format만을 사용한다.) <br>
 다른 format은 decoding을 복잡하게 하지만, 32bit instruction을 균일하게 해준다.
 
 ## Byte Addresses
@@ -89,27 +89,27 @@ Arithmetic operation을 수행할 때는 memory → register, 저장할 때는 r
 
 1개의 word (= 4byte)에 어떤 순서로 byte를 저장할 수 있는가?
 
-1. Big Endian
-: MSB (most significant byte) - MIPS
+1. Big Endian <br>
+: MSB (most significant byte) - MIPS <br>
 → Good for comparison
-2. Little Endian
-: LSB (least significant byte) - x86, DEC
+2. Little Endian <br>
+: LSB (least significant byte) - x86, DEC <br>
 → Good for calculation
 
 ![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled4.png)
 
 ## Number of Operands 동작
 
-1. 3 operands
-1 result + 2 inputs
+1. 3 operands <br>
+1 result + 2 inputs <br>
 ex) R1 = R2 + R3 → Add R1, R2, R3
-2. 2 operands
-1 result/first input + 1 second input
+2. 2 operands <br>
+1 result/first input + 1 second input <br>
 R1 = R1 + R2 → Add R1, R2
-3. 1 operands
-implicit accumulator + 1 input
+3. 1 operands <br>
+implicit accumulator + 1 input <br>
 accumulator = accumulator + R1 → Add R1
-4. 0 operands
+4. 0 operands <br>
 add top two elements of the stack → Add 
 
 ## 2의 보수
@@ -174,7 +174,7 @@ add $t2, $s1, $zero
 and $t0, $t1, $t2    // t1과 t2의 비트 연산자를 t0에 저장
 or $t0, $t1, $t2    // t1과 t2의 비트 연산자를 t0에 저장
 nor $t0, $t1, $zero    // t1과 zero를 nor 연산하면 t1을 not 연산한 것과 같은 동작을 한다.
---------------> 최대한 instruction을 적게 가져간다. <------------
+// --------------> 최대한 instruction을 적게 가져간다. <------------
 ##############################
 
 ##### Conditional Operations #####
@@ -185,9 +185,9 @@ slt rd, rs, rt    // if(rs<rt) rd = 1; else rd = 0;
 slti rt, rs, constant    // if(rs<constant) rt = 1; else rt = 0;
 // sltu, sltui : unsigned에 대해서 comparison하는 함수이다.
 
-※※※※※※ blt, bgt는 왜 없을까?
--> equal을 비교하는 것보다 대소 비교가 더 오래걸려서 다른 instruction에 비해 속도가 느리다.
--> instruction마다 속도가 크게 차이나면 instruction이 실행되는데 걸리는 1번의 clock 시간이 길어져 전반적인 instruction 속도가 느려지게 된다.
+// ※※※※※※ blt, bgt는 왜 없을까?
+// -> equal을 비교하는 것보다 대소 비교가 더 오래걸려서 다른 instruction에 비해 속도가 느리다.
+// -> instruction마다 속도가 크게 차이나면 instruction이 실행되는데 걸리는 1번의 clock 시간이 길어져 전반적인 instruction 속도가 느려지게 된다.
 ##################################
 
 jal ProcedureAddress    // jump and link
@@ -203,16 +203,16 @@ sh rt, offset(rs)
 ```
 
 ```c
-ex) C code에서 다음과 같은 코드는 아래 MiPS 코드로 바꿀 수 있다.
+// ex) C code에서 다음과 같은 코드는 아래 MiPS 코드로 바꿀 수 있다.
 ##### C code:
 if (i==j) f = g+h;
 else f = g-h;
 #####
 
 ##### MIPS:
-			bne $s3, $s4, Else
-			add $s0, $s1, $s2
-			j Exit
+	bne $s3, $s4, Else
+	add $s0, $s1, $s2
+	j Exit
 Exit: sub $s0, $s1, $s2
 Exit: ....
 #####
@@ -225,11 +225,11 @@ while(save[i] == k) i+=1;
 
 ##### MIPS:
 Loop: sll $t1, $s3, 2
-			add $t1, $t1, $s6
-			lw $t0, 0($t1)
-			bne $t0, $s5, Exit
-			addi $s3, $s3, 1
-			j Loop
+	add $t1, $t1, $s6
+	lw $t0, 0($t1)
+	bne $t0, $s5, Exit
+	addi $s3, $s3, 1
+	j Loop
 Exit: ....
 #####
 ```
@@ -276,9 +276,9 @@ register에 할당되어 있는 argument, return value를 위한 공간보다 �
 
 ( ex. 함수가 연속적으로 call 되었을 때, return value는 계속 증가한다. )
 
-→ 이와 같이 register 공간이 부족해지는 경우 stack에 push, pop하여 저장한다.
-    ($sp는 stack pointer로써 현재 stack의 위치를 갖는다.)
-    (push할 때는 $sp -= 4, pop할 때는 $sp += 4  ******stack은 아래로 쌓인다.*****)*
+→ 이와 같이 register 공간이 부족해지는 경우 stack에 push, pop하여 저장한다. <br>
+&emsp;    (sp는 stack pointer로써 현재 stack의 위치를 갖는다.) <br>
+&emsp;    (push할 때는 sp -= 4, pop할 때는 sp += 4  *****stack은 아래로 쌓인다.*****)
 
 ```c
 ##### C code:
@@ -295,7 +295,7 @@ leaf_example:
 	addi  $sp, $sp, -4
 	sw  $s0, 0($sp)
 	add  $t0, $a0, $a1
-	add  $t1, $a3, $a3
+	add  $t1, $a2, $a3
 	sub  $s0, $t0, $t1
 	add  $v0, $s0, $zero    // v0가 return값이다.
 	lw  $s0, 0($sp)
@@ -325,7 +325,8 @@ fact:
 	addi  $v0, $zero, 1
 	addi  $sp, $sp, 8
 	jr  $ra
-L1: addi  $a0, $a0, -1
+L1: 
+	addi  $a0, $a0, -1
 	jal fact
 	lw  $a0, 0($sp)
 	lw  $ra, 4($sp)
@@ -385,8 +386,8 @@ L2:
 
 대부분의 constant는 작아서 16비트 이내에서 표현 가능하다.
 
-하지만 때때로 32비트로 표현해야 하는 경우, 
-lui는 왼쪽 16비트에 constant를 copy하고 오른쪽 16비트는 0으로 설정한다.
+하지만 때때로 32비트로 표현해야 하는 경우, <br>
+lui는 왼쪽 16비트에 constant를 copy하고 오른쪽 16비트는 0으로 설정한다. <br>
 이 후 or 연산을 하는 ori 명령어를 사용해서 오른쪽 16비트를 추가 설정해줄 수 있다.
 
 branch 명령어의 경우, opcode, two register, target address를 저장한다.
@@ -465,7 +466,7 @@ exit1:
 #####
 ```
 
-위의 sort 함수를 완벽하게 표현하려면 stack에 저장하고, load하는 과정을 모두 포함하여야 한다.
+위의 sort 함수를 완벽하게 표현하려면 stack에 저장하고, load하는 과정을 모두 포함하여야 한다. <br>
 
 - 성능 비교
 
@@ -475,7 +476,7 @@ compiler quantization과 같은 기법을 사용한 경우, CPI는 변화가 거
 
 이처럼 CPI나 instruction count 각각만을 보고 성능에 대한 metric으로 사용할 수는 없다.
 
-( *** 또한 compiler optimization은 알고리즘에 민감해 코드를 잘 짜야한다;;; *** )
+( *** 또한 compiler optimization은 알고리즘에 민감해 코드를 잘 짜야한다;;; *** ) <br>
 
 - 성능 향상
 
@@ -483,7 +484,7 @@ compiler quantization과 같은 기법을 사용한 경우, CPI는 변화가 거
 
 ![Untitled](/assets/img/post/ISA_(Instruction_Set_Architecture)/Untitled9.png)
 
-이처럼 index를 사용했을 때는 loop 내부에서 shift 과정이 일어나 추가적인 load가 생긴다.
+이처럼 index를 사용했을 때는 loop 내부에서 shift 과정이 일어나 추가적인 load가 생긴다. <br>
 
 - pseudoinstruction
 
