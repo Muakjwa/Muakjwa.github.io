@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Muakjwa # the main title
 
-tagline: Posting What I'm Learning # it will display as the sub-title
+tagline: CV (Portfolio) # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   A minimal, responsive and feature-rich Jekyll theme for technical writing.
