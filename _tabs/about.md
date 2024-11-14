@@ -4,144 +4,130 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-@page {
-  size: letter;
-  margin: 0.5in;
-}
+<style>
+    @page {
+    size: letter;
+    margin: 0.5in;
+    }
 
-/* You can poke around this CSS if you want to customize your formatting / styling further */
-/* You can even import custom fonts! */
+    /* You can poke around this CSS if you want to customize your formatting / styling further */
+    /* You can even import custom fonts! */
 
-/* fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+    /* fonts */
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
 
-/* meta */
-body {
-    font-family: 'Calibri';
-    font-size:  14px;
-}
+    /* meta */
+    body {
+        font-family: 'Calibri';
+        font-size:  14px;
+    }
 
-.spacer {
-    margin: 0px auto;
-}
+    .spacer {
+        margin: 0px auto;
+    }
 
-.border {
-    font-size: 15px;
-    font-weight: bold;
-    line-height: 150%;
-}
+    .border {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 150%;
+    }
 
-.small {
-    font-size: 12px;
-    line-height: 100%;
-}
+    .small {
+        font-size: 12px;
+        line-height: 100%;
+    }
 
-.middle {
-    font-size: 15px;
-    line-height: 120%;
-}
+    .middle {
+        font-size: 15px;
+        line-height: 120%;
+    }
 
-/* ordering of content */
-h1 {
-    order: 0;
-}
+    /* ordering of content */
+    h1 {
+        order: 0;
+    }
 
-.headerInfo {
-    order: 1;
-}
+    .headerInfo {
+        order: 1;
+    }
 
-/* styling content */
-h1, h2, h3, p, a, li {
-    color: black;
-}
+    /* styling content */
+    h1, h2, h3, p, a, li {
+        color: black;
+    }
 
-h2 {
-    margin: 10px 0px;
-}
+    h2 {
+        margin: 10px 0px;
+    }
 
-h3 {
-    margin: 6px 0px;
-    line-height: 120%;
-}
+    h3 {
+        margin: 6px 0px;
+        line-height: 120%;
+    }
 
-h1 {
-    color: black;
-    text-align: center;
-    font-size: 28px;
-    margin: 0;
-    padding: 0;
-}
+    h1 {
+        color: black;
+        text-align: center;
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
+    }
 
-h2 {
-    border-bottom: 1px solid #000000;
-    text-transform: uppercase;
-    font-size: 16px;
-    padding: 0;
-}
+    h2 {
+        border-bottom: 1px solid #000000;
+        text-transform: uppercase;
+        font-size: 16px;
+        padding: 0;
+    }
 
-h3 {
-    display: flex;
-    font-size: 15px;
-    padding: 0;
-    justify-content: space-between;
-}
+    h3 {
+        display: flex;
+        font-size: 15px;
+        padding: 0;
+        justify-content: space-between;
+    }
 
-p {
-    margin: 0;
-    padding: 0;
-}
+    p {
+        margin: 0;
+        padding: 0;
+    }
 
-a {
-    color: black;
-}
+    a {
+        color: black;
+    }
 
-ul {
-    margin: 4px 0;
-    padding-left: 24px;
-    padding-right: 24px;
-}
+    ul {
+        margin: 4px 0;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
 
-/* header info content */
-.headerInfo > ul {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 6px auto 0px !important;
-    padding: 0;
-}
+    /* header info content */
+    .headerInfo > ul {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 6px auto 0px !important;
+        padding: 0;
+    }
 
-.headerInfo > ul > li {
-    display: inline;
-    white-space: pre;
-    list-style-type: none;
-}
+    .headerInfo > ul > li {
+        display: inline;
+        white-space: pre;
+        list-style-type: none;
+    }
 
-.headerInfo > ul >li:not(:last-child) {
-    margin-right: 8px;
-}
+    .headerInfo > ul >li:not(:last-child) {
+        margin-right: 8px;
+    }
 
-.headerInfo > ul > li:not(:last-child):after {
-    content: "•";
-    margin-left: 8px;
-}
+    .headerInfo > ul > li:not(:last-child):after {
+        content: "•";
+        margin-left: 8px;
+    }
+</style>
 
-<!--
-Welcome to resume.lol !
 
-This is the template you can use to get started.
-
-More documentation can be found in the docs section
->>> https://resume.lol/docs
--->
-@REDACTED=false
-@SCHOOL = School of Undergraduate Studies, College of Transdisciplinary studies
-@SCHOOL_FULL = Daegu Gyeongbuk Institute of Science and Technology (DGIST)
-
-<!-- @NAME=My Name||Hidden Name -->
-<!-- @EMAIL=ysw0920@dgist.ac.kr||fake@email.com -->
-<!-- @PHONE=(123) 123-REAL||(555) 123-5555 -->
-<!-- @LOCATION=Los Angeles, CA -->
-<!-- @WEBSITE=mysite.com||example.com -->
 
 # Sunwoo Yu
 </br>
@@ -150,11 +136,6 @@ More documentation can be found in the docs section
 
 - School of Undergraduate Studies, College of Transdisciplinary studies 
   Daegu Gyeongbuk Institute of Science and Technology (DGIST)
-<!-- - Daegu Gyeongbuk Institute of Science and Technology (DGIST) -->
-<!-- - {EMAIL} -->
-<!-- - {PHONE} -->
-<!-- - [{WEBSITE}](https://{WEBSITE}) -->
-<!-- - {LOCATION} -->
 
 </div>
 
