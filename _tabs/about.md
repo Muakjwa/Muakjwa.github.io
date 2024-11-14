@@ -133,7 +133,7 @@ Personal Data
 </h2>
 
 <div>
-    <p class = "border">Phone</p> &emsp; &emsp; &emsp; &emsp; +82-10-5762-2205
+    <span class = "border">Phone</span> &emsp; &emsp; &emsp; &emsp; +82-10-5762-2205
     <br>
     <span class = "border">E-mail</span> &emsp; &emsp; &emsp; &emsp; ysw0920@dgist.ac.kr
     <br>
