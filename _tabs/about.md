@@ -87,6 +87,23 @@ order: 1
         text-align: center;
         line-height: 100%
     }
+
+    .indent {
+        text-indent: 20px;
+    }
+
+    ol {
+        list-style-position: inside;
+    }
+
+    li::marker {
+        content: counter(list-item) "."; /* 숫자 뒤에 공백 추가 */
+    }
+
+    li {
+        padding-left: 0.8em;
+        text-indent: -2em;
+    }
 </style>
 
 
@@ -105,25 +122,27 @@ Research Interest
 </h2>
 
 <h3 class = 'h3_content'>
-&emsp; - Deep Learning <br>
-&emsp; - Representation Learning <br>
-&emsp; - Efficient Data Compression
+    &emsp; - Deep Learning <br>
+    &emsp; - Representation Learning <br>
+    &emsp; - Efficient Data Compression
 </h3>
 <br>
 
 <h2 class = 'sub_title'>
 Personal Data
 </h2>
-<span class = "border">Phone</span> &emsp; &emsp; &emsp; &emsp; +82-10-5762-2205
-<br>
-<span class = "border">E-mail</span> &emsp; &emsp; &emsp; &emsp; ysw0920@dgist.ac.kr
-<br>
-<span class = "border">Major </span> &emsp; &emsp; &emsp; &emsp; Computer Science
-<br>
-<span class = "border">GPA </span> &emsp; &emsp; &emsp; &emsp; &emsp;3.98/4.3 
-&emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
-<span class = "border">Major GPA </span> &emsp; &emsp; &emsp; 4.18/4.3
-<br><br>
+
+<div>
+    <p class = "border">Phone</p> &emsp; &emsp; &emsp; &emsp; +82-10-5762-2205
+    <br>
+    <span class = "border">E-mail</span> &emsp; &emsp; &emsp; &emsp; ysw0920@dgist.ac.kr
+    <br>
+    <span class = "border">Major </span> &emsp; &emsp; &emsp; &emsp; Computer Science
+    <br>
+    <span class = "border">GPA </span> &emsp; &emsp; &emsp; &emsp; &emsp;3.98/4.3 
+    &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+    <span class = "border">Major GPA </span> &emsp; &emsp; &emsp; 4.18/4.3
+</div><br>
 
 <h2 class = 'sub_title'>
 Education
@@ -150,72 +169,77 @@ University of California, Los Angeles (UCLA) <span class="spacer"></span> Jun.20
   Exchange Program
   </i> 
 </p>
-
 <br>
 
 <h2 class = 'sub_title'>
 Publications
 </h2>
 
-&emsp; \* Equal contributor
-<br>
-
-&emsp;<span class = "middle"> 2. &emsp;Daewon Kim, <ins>**Sunwoo Yu**</ins>, Jaehyeon Lee and Seonghun Lee, “Development of a Driver Monitoring &emsp;&emsp;&emsp;System Using the Capacitive Steering Wheel and FMCW Radar”, The Korean Institute of Communications 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Information Sciences (KICS) Conference (Fall), Nov. **2024**. (Expected)</span>
-
-&emsp;<span class = "middle"> 1. &emsp;Jaehyeon Lee<sup>\*</sup>, <ins>**Sunwoo Yu**</ins> <sup>\*</sup>, Daewon Kim, and Kiwon Choi, “Multi-patching: life-log Classification with 
-&emsp;&emsp;&emsp;the Reconstructed Representation of Multivariate Time Series”, The 15th International 
-Conference on 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICT Convergence (ICTC 2024), pp. 798-803, Oct. **2024**.</span>
-
+<div class = "middle indent">
+    * Equal contributor <br> 
+    <ol reversed>
+        <li class = "middle">
+            &emsp;Daewon Kim, <ins><b>Sunwoo Yu</b></ins>, Jaehyeon Lee and Seonghun Lee, “Development of a Driver Monitoring System Using the Capacitive Steering Wheel and FMCW Radar”, The Korean Institute of Communications and Information Sciences (KICS) Conference (Fall), Nov. <b>2024</b>. (Expected)
+        </li>
+        <li class = "middle">
+            &emsp;Jaehyeon Lee*, <ins><b>Sunwoo Yu</b></ins>*, Daewon Kim, and Kiwon Choi, “Multi-patching: life-log Classification with the Reconstructed Representation of Multivariate Time Series”, The 15th International Conference on ICT Convergence (ICTC 2024), pp. 798-803, Oct. <b>2024</b>.
+        </li>
+    </ol>
+</div>
 <br>
 
 <h2 class = 'sub_title'>
 Research Experience
 </h2>
-<h3 class = 'h3_content'>
-• Undergraduate Group Research Program (UGRP) <span class="spacer"></span> Feb.2024 &mdash; Dec.2024
-</h3>
-&emsp; at Department of Brain Sciences, DGIST <br>
-&emsp; ( Prof. Hankyoung Choe, DGIST ABC-DGIST)
-<br>
-&ensp; <b>✓ Design of a radar dataset collection system</b> for subjects’ sleep in polysomnography experiments <br>
-&ensp; <b>✓ predicting Heart Rate/Respiratory Rate with radar data & predicting sleep stage using representation from HR/RR</b>
-<br><br>
 
-<h3 class = 'h3_content'>
-• Undergraduate Research Assistant <span class="spacer"></span> Sep.2023 &mdash; Nov.2024
-</h3>
-&emsp; at Department of Electrical Engineering & Computer Science, DGIST <br> 
-&emsp; ( Prof. Hoonsung Chwa, DGIST RTCL)
+<div>
+    <h3 class = 'h3_content'>
+        • Undergraduate Group Research Program (UGRP) <span class="spacer"></span> Feb.2024 &mdash; Dec.2024
+    </h3>
+    &emsp; at Department of Brain Sciences, DGIST <br>
+    &emsp; ( Prof. Hankyoung Choe, DGIST ABC-DGIST)
+    <br>
+    &ensp; <b>✓ Design of a radar dataset collection system</b> for subjects’ sleep in polysomnography experiments <br>
+    &ensp; <b>✓ predicting Heart/Respiratory Rate with radar data & predicting sleep stage using representation from HR/RR</b>
+</div>
 <br>
-&ensp; <b>✓ PyTorch Camp</b> : Learning how to use pytorch by implementing below paper <br> 
-&emsp; (LaLaRAND: Flexible Layer-by-Layer CPU/GPU Scheduling for Real-Time DNN Tasks) <br> 
-&ensp; <b>✓ Project</b> : Real-Time streaming system using foveated rendering <br> 
-&ensp; <b>✓ Experience of editing PyTorch & OpenCV source code</b>
 
+<div>
+    <h3 class = 'h3_content'>
+    • Undergraduate Research Assistant <span class="spacer"></span> Sep.2023 &mdash; Nov.2024
+    </h3>
+    &emsp; at Department of Electrical Engineering & Computer Science, DGIST <br> 
+    &emsp; ( Prof. Hoonsung Chwa, DGIST RTCL)
+    <br>
+    &ensp; <b>✓ PyTorch Camp</b> : Learning how to use pytorch by implementing below paper <br> 
+    &emsp; (LaLaRAND: Flexible Layer-by-Layer CPU/GPU Scheduling for Real-Time DNN Tasks) <br> 
+    &ensp; <b>✓ Project</b> : Real-Time streaming system using foveated rendering <br> 
+    &ensp; <b>✓ Experience of editing PyTorch & OpenCV source code</b>
+</div>
 <br>
 
 <h2 class = 'sub_title'>
 Awards and Honors
 </h2>
 
-<h3 class = 'h3_content'>
-Encouragement Prize, The World Embedded Software Contest 2024, KESSIA <span class="spacer"></span> Nov.2024
-</h3>
-<h3 class = 'h3_content'>
-Encouragement Prize, Human Understanding AI Paper Challenge 2024, ETRI <span class="spacer"></span> Oct.2024
-</h3>
-- Director of ETRI(Electronics and Telecommunications Research Institute) Award
-<h3 class = 'h3_content'>
-Academic Excellence Award (DGIST) <span class="spacer"></span> Spring Semester, 2024
-</h3>
-<h3 class = 'h3_content'>
-Academic Excellence Award (DGIST) <span class="spacer"></span> Fall Semester, 2023
-</h3>
-<h3 class = 'h3_content'>
-Academic Excellence Award (DGIST) <span class="spacer"></span> Spring Semester, 2023
-</h3>
+<div>
+    <h3 class = 'h3_content'>
+    Encouragement Prize, The World Embedded Software Contest 2024, KESSIA <span class="spacer"></span> Nov.2024
+    </h3>
+    <h3 class = 'h3_content'>
+    Encouragement Prize, Human Understanding AI Paper Challenge 2024, ETRI <span class="spacer"></span> Oct.2024
+    </h3>
+    - Director of ETRI(Electronics and Telecommunications Research Institute) Award
+    <h3 class = 'h3_content'>
+    Academic Excellence Award (DGIST) <span class="spacer"></span> Spring Semester, 2024
+    </h3>
+    <h3 class = 'h3_content'>
+    Academic Excellence Award (DGIST) <span class="spacer"></span> Fall Semester, 2023
+    </h3>
+    <h3 class = 'h3_content'>
+    Academic Excellence Award (DGIST) <span class="spacer"></span> Spring Semester, 2023
+    </h3>
+</div>
 <br>
 
 
@@ -223,12 +247,15 @@ Academic Excellence Award (DGIST) <span class="spacer"></span> Spring Semester, 
 Skills
 </h2>
 
-<h3 class = 'h3_content'>
-TOEIC: &emsp;&emsp;&ensp; 810/990 <span class="spacer"></span> valid : Aug.2022 &mdash; Aug.2024
-</h3>
-<h3 class = 'h3_content'>
-Language: &emsp; Python, C/C++
-</h3>
-<h3 class = 'h3_content'>
-Tools: &emsp;&emsp;&emsp;Git, Docker, PyTorch, OpenAI Gym, ModusToolBox
-</h3>
+<div>
+    <h3 class = 'h3_content'>
+    TOEIC: &emsp;&emsp;&ensp; 810/990 <span class="spacer"></span> valid : Aug.2022 &mdash; Aug.2024
+    </h3>
+    <h3 class = 'h3_content'>
+    Language: &emsp; Python, C/C++
+    </h3>
+    <h3 class = 'h3_content'>
+    Tools: &emsp;&emsp;&emsp;Git, Docker, PyTorch, OpenAI Gym, ModusToolBox
+    </h3>
+</div>
+<br>
