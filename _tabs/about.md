@@ -4,6 +4,7 @@ icon: fas fa-info-circle
 order: 1
 ---
 
+
 <style>
     @page {
     size: letter;
@@ -14,11 +15,13 @@ order: 1
     /* You can even import custom fonts! */
 
     /* fonts */
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap');
+    /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap'); */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
     /* meta */
     body {
-        font-family: 'Calibri';
+        font-family: Calibri, sans-serif;
+        /* font-family: 'Calibri'; */
         font-size:  14px;
     }
 
@@ -43,9 +46,12 @@ order: 1
     }
 
     .title {
+        border-bottom: 1px solid #ffffff;
         color: black;
         text-align: center;
         font-size: 28px;
+        font-weight : bold;
+        line-height: 150%;
         margin: 0;
         padding: 0;
     }
@@ -53,6 +59,7 @@ order: 1
     .sub_title {
         border-bottom: 1px solid #000000;
         text-transform: uppercase;
+        font-weight : bold;
         font-size: 16px;
         margin: 10px 0px;
         padding: 0;
@@ -60,6 +67,7 @@ order: 1
 
     .h3_content{
         display: flex;
+        font-weight : bold;
         font-size: 15px;
         margin: 6px 0px;
         line-height: 150%;
@@ -77,6 +85,7 @@ order: 1
 
     .info {
         text-align: center;
+        line-height: 100%
     }
 </style>
 
@@ -106,15 +115,15 @@ Research Interest
 Personal Data
 </h2>
 <span class = "border">Phone</span> &emsp; &emsp; &emsp; &emsp; +82-10-5762-2205
-</br>
+<br>
 <span class = "border">E-mail</span> &emsp; &emsp; &emsp; &emsp; ysw0920@dgist.ac.kr
-</br>
+<br>
 <span class = "border">Major </span> &emsp; &emsp; &emsp; &emsp; Computer Science
-</br>
+<br>
 <span class = "border">GPA </span> &emsp; &emsp; &emsp; &emsp; &emsp;3.98/4.3 
 &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
 <span class = "border">Major GPA </span> &emsp; &emsp; &emsp; 4.18/4.3
-</br></br>
+<br><br>
 
 <h2 class = 'sub_title'>
 Education
@@ -142,26 +151,24 @@ University of California, Los Angeles (UCLA) <span class="spacer"></span> Jun.20
   </i> 
 </p>
 
-</br>
+<br>
 
 <h2 class = 'sub_title'>
 Publications
 </h2>
 
 &emsp; \* Equal contributor
-<br><br>
+<br>
 
-&emsp;<span class = "middle"> 2. &emsp;Daewon Kim, <ins>**Sunwoo Yu**</ins>, Jaehyeon Lee and Seonghun Lee, “Development of a Driver Monitoring System 
-&emsp;&emsp;&emsp;Using the Capacitive Steering Wheel and FMCW Radar”, The Korean Institute of Communications and 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information Sciences (KICS) Conference (Fall), Nov. **2024**. (Expected)</span>
+&emsp;<span class = "middle"> 2. &emsp;Daewon Kim, <ins>**Sunwoo Yu**</ins>, Jaehyeon Lee and Seonghun Lee, “Development of a Driver Monitoring &emsp;&emsp;&emsp;System Using the Capacitive Steering Wheel and FMCW Radar”, The Korean Institute of Communications 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and Information Sciences (KICS) Conference (Fall), Nov. **2024**. (Expected)</span>
 
-&emsp;<span class = "middle"> 1. &emsp;Jaehyeon Lee<sup>\*</sup>, <ins>**Sunwoo Yu**</ins> <sup>\*</sup>, Daewon Kim, and Kiwon Choi, “Multi-patching: life-log Classification 
-with the 
-&emsp;&emsp;&emsp;Reconstructed Representation of Multivariate Time Series”, The 15th International 
-Conference on ICT 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Convergence (ICTC 2024), pp. 798-803, Oct. **2024**.</span>
+&emsp;<span class = "middle"> 1. &emsp;Jaehyeon Lee<sup>\*</sup>, <ins>**Sunwoo Yu**</ins> <sup>\*</sup>, Daewon Kim, and Kiwon Choi, “Multi-patching: life-log Classification with 
+&emsp;&emsp;&emsp;the Reconstructed Representation of Multivariate Time Series”, The 15th International 
+Conference on 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICT Convergence (ICTC 2024), pp. 798-803, Oct. **2024**.</span>
 
-</br>
+<br>
 
 <h2 class = 'sub_title'>
 Research Experience
@@ -187,6 +194,7 @@ Research Experience
 &ensp; <b>✓ Project</b> : Real-Time streaming system using foveated rendering <br> 
 &ensp; <b>✓ Experience of editing PyTorch & OpenCV source code</b>
 
+<br>
 
 <h2 class = 'sub_title'>
 Awards and Honors
