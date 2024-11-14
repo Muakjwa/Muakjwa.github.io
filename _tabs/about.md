@@ -1,7 +1,7 @@
 ---
 # the default layout is 'page'
 icon: fas fa-info-circle
-order: 4
+order: 1
 ---
 
 <style>
@@ -42,20 +42,6 @@ order: 4
         line-height: 120%;
     }
 
-    /* ordering of content */
-    h1 {
-        order: 0;
-    }
-
-    .headerInfo {
-        order: 1;
-    }
-
-    /* styling content */
-    h1, h2, h3, p, a, li {
-        color: black;
-    }
-
     h2 {
         margin: 10px 0px;
     }
@@ -63,14 +49,6 @@ order: 4
     h3 {
         margin: 6px 0px;
         line-height: 120%;
-    }
-
-    h1 {
-        color: black;
-        text-align: center;
-        font-size: 28px;
-        margin: 0;
-        padding: 0;
     }
 
     h2 {
@@ -101,51 +79,37 @@ order: 4
         padding-left: 24px;
         padding-right: 24px;
     }
-
-    /* header info content */
-    .headerInfo > ul {
-        display: flex;
+    
+    .title {
+        color: black;
         text-align: center;
-        justify-content: center;
-        margin: 6px auto 0px !important;
+        font-weight: bold;
+        font-size: 28px;
+        margin: 0;
         padding: 0;
     }
-
-    .headerInfo > ul > li {
-        display: inline;
-        white-space: pre;
-        list-style-type: none;
-    }
-
-    .headerInfo > ul >li:not(:last-child) {
-        margin-right: 8px;
-    }
-
-    .headerInfo > ul > li:not(:last-child):after {
-        content: "•";
-        margin-left: 8px;
+    
+    .info {
+        text-align: center;
     }
 </style>
 
 
-
-# Sunwoo Yu
+<h1 class = 'title'>
+Sunwoo Yu  
+</h1>  
 </br>
 
-<div class="section headerInfo">
-
-- School of Undergraduate Studies, College of Transdisciplinary studies 
-  Daegu Gyeongbuk Institute of Science and Technology (DGIST)
-
+<div class="info">
+School of Undergraduate Studies, College of Transdisciplinary studies
+Daegu Gyeongbuk Institute of Science and Technology (DGIST)
 </div>
 
 ## Research Interest
 ### &emsp; - Deep Learning
 ### &emsp; - Representation Learning
 ### &emsp; - Efficient Data Compression
-
-</br>
-
+  
 ## Personal Data
 <span class = "border">Phone</span> &emsp; &emsp; &emsp; &emsp; +82-10-5762-2205
 </br>
