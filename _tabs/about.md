@@ -42,27 +42,27 @@ order: 1
         line-height: 120%;
     }
 
-    h2 {
-        margin: 10px 0px;
+    .title {
+        color: black;
+        text-align: center;
+        font-size: 28px;
+        margin: 0;
+        padding: 0;
     }
 
-    h3 {
-        margin: 6px 0px;
-        line-height: 120%;
-    }
-
-    h2 {
+    .sub_title {
         border-bottom: 1px solid #000000;
         text-transform: uppercase;
         font-size: 16px;
+        margin: 10px 0px;
         padding: 0;
     }
 
-    h3 {
+    .h3_content{
         display: flex;
         font-size: 15px;
-        padding: 0;
-        justify-content: space-between;
+        margin: 6px 0px;
+        line-height: 150%;
     }
 
     p {
@@ -70,25 +70,11 @@ order: 1
         padding: 0;
     }
 
-    a {
-        color: black;
+
+    .paper {
+        text-indent: 100px;
     }
 
-    ul {
-        margin: 4px 0;
-        padding-left: 24px;
-        padding-right: 24px;
-    }
-    
-    .title {
-        color: black;
-        text-align: center;
-        font-weight: bold;
-        font-size: 28px;
-        margin: 0;
-        padding: 0;
-    }
-    
     .info {
         text-align: center;
     }
@@ -96,21 +82,29 @@ order: 1
 
 
 <h1 class = 'title'>
-Sunwoo Yu  
-</h1>  
-</br>
+Sunwoo Yu
+</h1>
 
 <div class="info">
-School of Undergraduate Studies, College of Transdisciplinary studies
+School of Undergraduate Studies, College of Transdisciplinary studies <br>
 Daegu Gyeongbuk Institute of Science and Technology (DGIST)
 </div>
 
-## Research Interest
-### &emsp; - Deep Learning
-### &emsp; - Representation Learning
-### &emsp; - Efficient Data Compression
-  
-## Personal Data
+
+<h2 class = 'sub_title'>
+Research Interest
+</h2>
+
+<h3 class = 'h3_content'>
+&emsp; - Deep Learning <br>
+&emsp; - Representation Learning <br>
+&emsp; - Efficient Data Compression
+</h3>
+<br>
+
+<h2 class = 'sub_title'>
+Personal Data
+</h2>
 <span class = "border">Phone</span> &emsp; &emsp; &emsp; &emsp; +82-10-5762-2205
 </br>
 <span class = "border">E-mail</span> &emsp; &emsp; &emsp; &emsp; ysw0920@dgist.ac.kr
@@ -122,25 +116,44 @@ Daegu Gyeongbuk Institute of Science and Technology (DGIST)
 <span class = "border">Major GPA </span> &emsp; &emsp; &emsp; 4.18/4.3
 </br></br>
 
-## Education
-### Daegu Gyeongbuk Institute of Science and Technology (DGIST) <span class="spacer"></span> Mar.2020 &mdash; Present
-<span class = "small">
-School of Undergraduate Studies, College of Transdisciplinary studies
+<h2 class = 'sub_title'>
+Education
+</h2>
 
-*Bachelor Student* 
-</span>
+<h3 class = 'h3_content'>
+Daegu Gyeongbuk Institute of Science and Technology (DGIST) <span class="spacer"></span> Mar.2020 &mdash; Present
+</h3>
+
+<p class = "small">
+School of Undergraduate Studies, College of Transdisciplinary studies <br>
+  <i>
+  Bachelor Student
+  </i>
+</p>
+<br>
+
+<h3 class = 'h3_content'>
+University of California, Los Angeles (UCLA) <span class="spacer"></span> Jun.2023 &mdash; Aug.2023
+</h3>
+
+<p class = "small">
+  <i>
+  Exchange Program
+  </i> 
+</p>
 
 </br>
 
-### University of California, Los Angeles (UCLA) <span class="spacer"></span> Jun.2023 &mdash; Aug.2023
-<span class = "small"> *Exchange Program*
-</span>
+<h2 class = 'sub_title'>
+Publications
+</h2>
 
-</br>
-
-## Publications
 &emsp; \* Equal contributor
-</br></br>
+<br><br>
+
+&emsp;<span class = "middle"> 2. &emsp;Daewon Kim, <ins>**Sunwoo Yu**</ins>, Jaehyeon Lee and Seonghun Lee, “Development of a Driver Monitoring System 
+&emsp;&emsp;&emsp;Using the Capacitive Steering Wheel and FMCW Radar”, The Korean Institute of Communications and 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Information Sciences (KICS) Conference (Fall), Nov. **2024**. (Expected)</span>
 
 &emsp;<span class = "middle"> 1. &emsp;Jaehyeon Lee<sup>\*</sup>, <ins>**Sunwoo Yu**</ins> <sup>\*</sup>, Daewon Kim, and Kiwon Choi, “Multi-patching: life-log Classification 
 with the 
@@ -150,57 +163,64 @@ Conference on ICT
 
 </br>
 
-## Research Experience
-### • Undergraduate Group Research Program (UGRP) <span class="spacer"></span> Feb.2024 &mdash; Dec.2024
-&emsp; at Department of Brain Sciences, DGIST 
-
+<h2 class = 'sub_title'>
+Research Experience
+</h2>
+<h3 class = 'h3_content'>
+• Undergraduate Group Research Program (UGRP) <span class="spacer"></span> Feb.2024 &mdash; Dec.2024
+</h3>
+&emsp; at Department of Brain Sciences, DGIST <br>
 &emsp; ( Prof. Hankyoung Choe, DGIST ABC-DGIST)
-</br></br>
+<br>
+&ensp; <b>✓ Design of a radar dataset collection system</b> for subjects’ sleep in polysomnography experiments <br>
+&ensp; <b>✓ predicting Heart Rate/Respiratory Rate with radar data & predicting sleep stage using representation from HR/RR</b>
+<br><br>
 
-&ensp; **✓ Design of a radar dataset collection system** for subjects’ sleep in polysomnography experiments
-
-&ensp; **✓ predicting Heart Rate/Respiratory Rate with radar data & predicting sleep stage using representation from HR/RR**
-
-</br></br>
-
-### • Undergraduate Research Assistant <span class="spacer"></span> Sep.2023 &mdash; Nov.2024
-&emsp; at Department of Electrical Engineering & Computer Science, DGIST
-
+<h3 class = 'h3_content'>
+• Undergraduate Research Assistant <span class="spacer"></span> Sep.2023 &mdash; Nov.2024
+</h3>
+&emsp; at Department of Electrical Engineering & Computer Science, DGIST <br> 
 &emsp; ( Prof. Hoonsung Chwa, DGIST RTCL)
-</br></br>
-
-&ensp; **✓ PyTorch Camp** : Learning how to use pytorch by implementing below paper
-
-&emsp; (LaLaRAND: Flexible Layer-by-Layer CPU/GPU Scheduling for Real-Time DNN Tasks)
-
-&ensp; **✓ Project** : Real-Time streaming system using foveated rendering
-
-&ensp; **✓ Experience of editing PyTorch & OpenCV source code**
+<br>
+&ensp; <b>✓ PyTorch Camp</b> : Learning how to use pytorch by implementing below paper <br> 
+&emsp; (LaLaRAND: Flexible Layer-by-Layer CPU/GPU Scheduling for Real-Time DNN Tasks) <br> 
+&ensp; <b>✓ Project</b> : Real-Time streaming system using foveated rendering <br> 
+&ensp; <b>✓ Experience of editing PyTorch & OpenCV source code</b>
 
 
-</br></br></br>
+<h2 class = 'sub_title'>
+Awards and Honors
+</h2>
 
-## Awards and Honors
-
-### Encouragement Prize, The World Embedded Software Contest 2024, KESSIA <span class="spacer"></span> Nov.2024
-
-### Encouragement Prize, Human Understanding AI Paper Challenge 2024, ETRI <span class="spacer"></span> Oct.2024
+<h3 class = 'h3_content'>
+Encouragement Prize, The World Embedded Software Contest 2024, KESSIA <span class="spacer"></span> Nov.2024
+</h3>
+<h3 class = 'h3_content'>
+Encouragement Prize, Human Understanding AI Paper Challenge 2024, ETRI <span class="spacer"></span> Oct.2024
+</h3>
 - Director of ETRI(Electronics and Telecommunications Research Institute) Award
-
-### Academic Excellence Award (DGIST) <span class="spacer"></span> Spring Semester, 2024
-
-### Academic Excellence Award (DGIST) <span class="spacer"></span> Fall Semester, 2023
-
-### Academic Excellence Award (DGIST) <span class="spacer"></span> Spring Semester, 2023
-
-</br>
-
-## Skills
-
-### TOEIC: &emsp;&emsp;&ensp; 810/990 <span class="spacer"></span> valid : Aug.2022 &mdash; Aug.2024
-### Language: &emsp; Python, C/C++
-### Tools: &emsp;&emsp;&emsp;Git, Docker, PyTorch, OpenAI Gym, ModusToolBox
+<h3 class = 'h3_content'>
+Academic Excellence Award (DGIST) <span class="spacer"></span> Spring Semester, 2024
+</h3>
+<h3 class = 'h3_content'>
+Academic Excellence Award (DGIST) <span class="spacer"></span> Fall Semester, 2023
+</h3>
+<h3 class = 'h3_content'>
+Academic Excellence Award (DGIST) <span class="spacer"></span> Spring Semester, 2023
+</h3>
+<br>
 
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+<h2 class = 'sub_title'>
+Skills
+</h2>
+
+<h3 class = 'h3_content'>
+TOEIC: &emsp;&emsp;&ensp; 810/990 <span class="spacer"></span> valid : Aug.2022 &mdash; Aug.2024
+</h3>
+<h3 class = 'h3_content'>
+Language: &emsp; Python, C/C++
+</h3>
+<h3 class = 'h3_content'>
+Tools: &emsp;&emsp;&emsp;Git, Docker, PyTorch, OpenAI Gym, ModusToolBox
+</h3>
