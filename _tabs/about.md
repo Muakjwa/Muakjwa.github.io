@@ -78,7 +78,6 @@ order: 1
         padding: 0;
     }
 
-
     .paper {
         text-indent: 100px;
     }
@@ -89,7 +88,7 @@ order: 1
     }
 
     .indent {
-        text-indent: 20px;
+        text-indent: 1em;
     }
 
     .ol {
@@ -101,7 +100,7 @@ order: 1
     }
 
     .li {
-        padding-left: 0.8em;
+        padding-left: 1em;
         text-indent: -2em;
     }
 </style>
@@ -164,7 +163,9 @@ order: 1
     </h2>
     <div class = "middle indent">
         * Equal contributor <br> 
-        <ol reversed class ="ol">
+    </div>
+    <div>
+        <ol reversed start="2" class ="ol">
             <li class = "middle li">
                 &emsp;Daewon Kim, <ins><b>Sunwoo Yu</b></ins>, Jaehyeon Lee and Seonghun Lee, “Development of a Driver Monitoring System Using the Capacitive Steering Wheel and FMCW Radar”, The Korean Institute of Communications and Information Sciences (KICS) Conference (Fall), Nov. <b>2024</b>. (Expected)
             </li>
