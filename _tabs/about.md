@@ -133,7 +133,7 @@ order: 1
             School of Undergraduate Studies, College of Transdisciplinary studies <br>
             Daegu Gyeongbuk Institute of Science and Technology (DGIST)
         </div>
-        <a class="download" href="./about.pdf" download = "sunwoo's_CV">Download</a>
+        <a class="download" href="/_tabs/about.pdf" download = "sunwoo's_CV">Download</a>
     </div>
     <h2 class = 'sub_title'>
         Research Interest
