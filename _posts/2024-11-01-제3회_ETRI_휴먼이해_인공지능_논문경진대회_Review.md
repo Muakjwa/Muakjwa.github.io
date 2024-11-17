@@ -18,6 +18,8 @@ render_with_liquid: false
 
 수집된 dataset은 device의 acceleration, GPS, light intensity, heart rate 등 다양한 feature를 가진다.
 
+![An illustration of the life-log data stream.]( ../assets/img/post/multi_patching/lifelog%20data%20stream.png ){: .w-70}
+
 ## Related Works
 ### Model
 dataset이 user 하루에 대한 multi-modal data이다.
@@ -90,6 +92,8 @@ Challenge part에서 NaN value가 많은 문제는 interpolation의 방식으로
 3. 압축된 각 patch를 이어서, Patch-TST를 통해 classification을 진행한다.<br>
   (이 과정을 통해서 Patch-TST가 patch들 간의 inter-period를 잘 분석하여 classification을 진행하게 된다.)
 
+![Multi-patching Overview.]( ../assets/img/post/multi_patching/model%20overview.png ){: .w-70}
+
 이와 같은 process를 통해서 train, inference가 진행되며, 1-stage에서 압축의 과정이 있어 프로세스 속도의 향상과 memory issue를 한꺼번에 해결 가능하다.
 
 dataset에서 patch로 나뉜 data가 LSTM-AutoEncoder에 들어가고, LSTM-AutoEncoder의 output이 Patch-TST에서 다시 Patch화되어 적용되어 <br>
@@ -100,8 +104,22 @@ dataset에서 patch로 나뉜 data가 LSTM-AutoEncoder에 들어가고, LSTM-Aut
 ## Result
 위의 Method를 사용한 결과, 아래와 같이 단순 resampling 하였을 때보다 memory 사용량을 획기적으로 줄이면서도 더 높은 성능을 자랑할 수 있었다.
 
+<div style="display: flex; justify-content: space-around;">
+    <img src="../assets/img/post/multi_patching/performance_comparison_final.png" alt="Performance Comparison using Autoencoder" width="300"/>
+    <img src="../assets/img/post/multi_patching/mem_f1_final.png" alt="Memory Usage Efficiency & Optimal Intraperiod Patterns Lengths." width="300"/>
+</div>
+<!-- ![Performance Comparison using Autoencoder.]( ../assets/img/post/multi_patching/performance_comparison_final.png )
+![Memory Usage Efficiency & Optimal Intraperiod Patterns Lengths.]( ../assets/img/post/multi_patching/mem_f1_final.png ) -->
+
 ## Review of Contest
 결론적으로 이 대회에서는 장려상을 차지하게 되었다!
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="../assets/img/post/multi_patching/poster_presentation.jpg" alt="Poster Presentation" width="300"/>
+    <img src="../assets/img/post/multi_patching/encouragement_award.jpg" alt="Award from Contest" width="300"/>
+</div>
+<!-- ![Poster Presentation]( ../assets/img/post/multi_patching/poster_presentation.jpg )
+![Award from Contest]( ../assets/img/post/multi_patching/encouragement_award.jpg ) -->
 
 대회에 대한 몇 가지 회고를 적어본다.<br>
 먼저 수상팀 중, 우리 팀을 제외한 팀들은 모두 대학원생이였다.<br>
