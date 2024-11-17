@@ -18,7 +18,7 @@ render_with_liquid: false
 
 수집된 dataset은 device의 acceleration, GPS, light intensity, heart rate 등 다양한 feature를 가진다.
 
-![An illustration of the life-log data stream.]( /assets/img/post/multi_patching/lifelog%20data%20stream.png ){: .w-30}
+![An illustration of the life-log data stream]( /assets/img/post/multi_patching/lifelog%20data%20stream.png ){: width="300"}
 
 ## Related Works
 ### Model
@@ -105,8 +105,8 @@ dataset에서 patch로 나뉜 data가 LSTM-AutoEncoder에 들어가고, LSTM-Aut
 위의 Method를 사용한 결과, 아래와 같이 단순 resampling 하였을 때보다 memory 사용량을 획기적으로 줄이면서도 더 높은 성능을 자랑할 수 있었다.
 
 <div style="display: flex; justify-content: space-around;">
-    <img src="/assets/img/post/multi_patching/performance_comparison_final.png" alt="Performance Comparison using Autoencoder" width="48%"/>
-    <img src="/assets/img/post/multi_patching/mem_f1_final.png" alt="Memory Usage Efficiency & Optimal Intraperiod Patterns Lengths." width="48%"/>
+    <img src="/assets/img/post/multi_patching/performance_comparison_final.png" alt="Performance Comparison using Autoencoder" width="400"/>
+    <img src="/assets/img/post/multi_patching/mem_f1_final.png" alt="Memory Usage Efficiency & Optimal Intraperiod Patterns Lengths." width="400"/>
 </div>
 <!-- ![Performance Comparison using Autoencoder.]( ../assets/img/post/multi_patching/performance_comparison_final.png )
 ![Memory Usage Efficiency & Optimal Intraperiod Patterns Lengths.]( ../assets/img/post/multi_patching/mem_f1_final.png ) -->
@@ -115,8 +115,8 @@ dataset에서 patch로 나뉜 data가 LSTM-AutoEncoder에 들어가고, LSTM-Aut
 결론적으로 이 대회에서는 장려상을 차지하게 되었다!
 
 <div style="display: flex; justify-content: space-around;">
-    <img src="/assets/img/post/multi_patching/poster_presentation.jpg" alt="Poster Presentation" width="48%"/>
-    <img src="/assets/img/post/multi_patching/encouragement_award.jpg" alt="Award from Contest" width="48%"/>
+    <img src="/assets/img/post/multi_patching/poster_presentation.jpg" alt="Poster Presentation" width="400"/>
+    <img src="/assets/img/post/multi_patching/encouragement_award.jpg" alt="Award from Contest" width="400"/>
 </div>
 <!-- ![Poster Presentation]( ../assets/img/post/multi_patching/poster_presentation.jpg )
 ![Award from Contest]( ../assets/img/post/multi_patching/encouragement_award.jpg ) -->
