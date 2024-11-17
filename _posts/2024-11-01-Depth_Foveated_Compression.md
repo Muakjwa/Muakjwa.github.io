@@ -1,20 +1,20 @@
 ---
 title: Depth Foveated Compression Review
-author: cotes
+author: Sunwoo Yu
 date: 2024-11-16 14:10:00 +0800
 categories: [Project]
 tags: [Review, Project, Research, Paper]
 render_with_liquid: false
 ---
 
-# Introduction
+## Introduction
 
-# Related Works
+## Related Works
 
-# Challenge
+## Challenge
 
-# Method
+## Method
 
-# Result
+## Result
 
-# Review of Contest
+## Review of Contest

@@ -25,6 +25,13 @@ order: 1
         font-size:  14px;
     }
 
+    .download {
+        text-align: right;
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
     .spacer {
         margin: 0px auto;
     }
@@ -84,7 +91,19 @@ order: 1
 
     .info {
         text-align: center;
-        line-height: 100%
+        display: flex;
+        line-height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .info .text {
+        flex: 1;
+        text-align: center;
+    }
+
+    .info .download {
+        text-align: right;
     }
 
     .indent {
@@ -107,11 +126,14 @@ order: 1
 
 <body class = "bodies">
     <h1 class = 'title'>
-        Sunwoo Yu
-    </h1>
+        Sunwoo Yu 
+    </h1> 
     <div class="info">
-        School of Undergraduate Studies, College of Transdisciplinary studies <br>
-        Daegu Gyeongbuk Institute of Science and Technology (DGIST)
+        <div class="text">
+            School of Undergraduate Studies, College of Transdisciplinary studies <br>
+            Daegu Gyeongbuk Institute of Science and Technology (DGIST)
+        </div>
+        <a class="download" href="./about.pdf" download = "sunwoo's_CV">Download</a>
     </div>
     <h2 class = 'sub_title'>
         Research Interest
