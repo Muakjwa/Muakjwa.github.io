@@ -25,6 +25,8 @@ RTCL(Real Time Computing Lab)으로 컴퓨터 시스템에서 실시간과 관�
 이러한 인간의 시력 모델을 AR/VR에 적용하면 더 빠른 속도를 낼 수 있을 것이라 생각하였다. <br>
 이 현상을 바로 찾아보았는데 해당 내용은 Foveated Rendering이라 불리며, 이미 Meta의 Quest라는 모델에도 사용중인 기술이였다.
 
+![Foveated Rendering]( /assets/img/post/depth_foveated_compression/foveated_rendering.jpg ){: width="500"}
+
 하지만 교수님에게 초점을 둘 때와, 바로 앞의 학생에 초점을 둘 때, 칠판의 판서의 흐릿함이 다르게 느껴졌다. <br>
 
 실제 사람의 시력모델은 초점에서 상하좌우로 멀어질수록 흐릿하게 느끼지만, <br>
@@ -37,6 +39,13 @@ RTCL(Real Time Computing Lab)으로 컴퓨터 시스템에서 실시간과 관�
 기존의 Foveated Rendering은 2D 화면에서의 Rendering 효율을 높이기 위해 사용되는 기술이었지만, <br>
 이제는 AR/VR을 사용하고, 여기서는 depth 정보도 중요한 정보로 활용될 수 있다.
 
+아래 이미지와 같이 depth 정보를 사용하면 기존보다 더 높은 blur level을 할당하여 압축할 수 있다.
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="/assets/img/post/depth_foveated_compression/wo_depth.png" alt="w/o depth" width="400"/>
+    <img src="/assets/img/post/depth_foveated_compression/w_depth.png" alt="w depth" width="400"/>
+</div>
+
 AR/VR 기기에서 사용되는 영상은 Rendering 연산량이 많아 high-quality rendering은 cloud환경에서 진행될 수 있다. <br>
 이렇게 rendering된 화면을 띄우기 위해서는 network 환경이 중요하고, 이 network 맞춰서 영상을 compress할 수 있다.
 
@@ -46,6 +55,8 @@ AR/VR 기기에서 사용되는 영상은 Rendering 연산량이 많아 high-qua
 jpeg의 encoding 과정 중, quantization 과정이 이미지의 압축률에 크게 관여한다.
 
 이 quantization 과정에서 low pass filter를 통해 compression level을 결정하도록 정의하였다.
+
+![JPEG compression with LPF]( /assets/img/post/depth_foveated_compression/JPEG_LPF.png ){: width="500"}
 
 이러한 process를 구현하기 위해 opencv source code를 분석하여, jpeg encoding 과정을 수정할 수 있었다.
 
