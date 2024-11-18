@@ -5,6 +5,7 @@ date: 2024-11-01 14:10:00 +0800
 categories: [Contest]
 tags: [Review, Contest, Research, Paper]
 render_with_liquid: false
+image: /assets/img/post/multi_patching/encouragement_award.jpg
 ---
 
 ## Introduction
