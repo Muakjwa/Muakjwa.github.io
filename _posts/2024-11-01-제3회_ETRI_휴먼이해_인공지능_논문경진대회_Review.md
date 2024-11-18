@@ -70,6 +70,11 @@ time-series information을 잘 분석하기 위해서는 모델에게 2가지 �
 
 3. Lots of NaN value<br>
   사용자가 device를 착용하거나 휴대하지 않을 경우, data가 NaN으로 적용되어, 생각보다 많은 구간의 data가 손실되어 있었다.
+
+<div style="display: flex; justify-content: space-around;">
+    <img src="/assets/img/post/multi_patching/data_structure.png" alt="data structure" width="400"/>
+    <img src="/assets/img/post/multi_patching/preprocessed_data.png" alt="preprocessed data" width="400"/>
+</div>
   
 Challenge part에서 NaN value가 많은 문제는 interpolation의 방식으로 대응할 수 있었다.
 
