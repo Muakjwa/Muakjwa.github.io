@@ -5,6 +5,7 @@ date: 2024-11-16 14:10:00 +0800
 categories: [Project]
 tags: [Review, Project, Research, Paper]
 render_with_liquid: false
+image: /assets/img/post/depth_foveated_compression/data_size_comparison.png
 ---
 
 ## Introduction
