@@ -17,7 +17,7 @@ image: /assets/img/post/4WS_RL/simulation.gif
 
 기계트랙 과목이지만 팀원중 2명이 컴퓨터공학 학생이었기 때문에 그 특성을 잘 살릴 수 있는 주제로 설정하였다.
 
-물론, hardware적인 독창성도 챙기기 위해서 다음과 같은 주제를 선정하였다.
+물론, hardware적인 독창성도 챙기기 위해서 다음과 같은 주제를 선정하였다.<br>
 4개의 독립적인 wheel을 사용한 강화학습 기반 자율주행
 
 일반적으로 4wheel steering을 사용하면 주행의 자율성이 더 광범위해진다.
@@ -43,7 +43,7 @@ Hardware는 기계트랙을 전공하는 팀원이 주도해서 제작하였다.
     <img src="/assets/img/post/4WS_RL/car_total.png" alt="Implemented Car" width="400"/>
 </div>
 
-이 차량에서 특징적으로 취할 수 있는 action은 크게 3가지가 있다.
+이 차량에서 특징적으로 취할 수 있는 action은 크게 3가지가 있다.<br>
 1. Straight Mode
 2. Diagonal Mode
 3. Zero Turn Mode
@@ -54,19 +54,19 @@ Hardware는 기계트랙을 전공하는 팀원이 주도해서 제작하였다.
 </div>
 
 ### Software
-차량을 자율주행시키기 위해서 주변 환경을 인지한 이후, 해당 환경에서 필요한 action을 결정해야한다.
+차량을 자율주행시키기 위해서 주변 환경을 인지한 이후, 해당 환경에서 필요한 action을 결정해야한다.<br>
 여기서 Action을 결정하기 위한 model로 우리는 강화학습 모델을 선택했다.
 
-처음에는 3D model을 바로 강화학습에 적용시키는 방안을 생각해보았지만,
+처음에는 3D model을 바로 강화학습에 적용시키는 방안을 생각해보았지만,<br>
 시간적 제약, 3D 환경의 강화학습 제작시 실제 환경과의 차이점 때문에 발생하는 차이를 극복하기 위해 2D환경에서 강화학습 model을 학습시켰다.
 
-2D환경에서 학습시킨 simulation 영상은 이와 같다.
-(4Wheel Steering의 장점을 살리기 위해서 simulation부터 real world까지 실행가능한 동작을 Straight, Diagonal, Zero turn 3가지 모드로 제한하였다.)
-![Simulation of 4WS RL Car]( /assets/img/post/4WS_RL/simulation.gif ){: .w-70}
+2D환경에서 학습시킨 simulation 영상은 이와 같다.<br>
+(4Wheel Steering의 장점을 살리기 위해서 simulation부터 real world까지 실행가능한 동작을 Straight, Diagonal, Zero turn 3가지 모드로 제한하였다.)<br>
+![Simulation of 4WS RL Car]( /assets/img/post/4WS_RL/simulation.gif ){: .w-100}
 
-이 model의 input으로는 차량으로부터 좌, 우, 대각선 좌, 대각선 우의 방향으로 차선까지의 거리를 준다.
-이 거리는 camera에서 
-calibration -> grayscale transform -> blurring -> Canny edge detection -> Hough Line Detection -> Distance Calculation
+이 model의 input으로는 차량으로부터 좌, 우, 대각선 좌, 대각선 우의 방향으로 차선까지의 거리를 준다.<br>
+이 거리는 camera에서 <br>
+calibration -> grayscale transform -> blurring -> Canny edge detection -> Hough Line Detection -> Distance Calculation<br>
 과정을 거쳐서 얻게 된다.
 
 얻어진 distance data는 RL model의 input으로 들어가 차량을 작동시킨다.
@@ -79,8 +79,8 @@ calibration -> grayscale transform -> blurring -> Canny edge detection -> Hough 
 
 실제로 실패도 한번씩 하게 되지만, 그 외의 상황에서는 상당히 차선을 따라서 잘 주행하는 모습을 볼 수 있다.
 
-이와 같이 실제로 차선을 인식하여 자율주행이 가능한 모델과 차량을 제작해보았으며,
-결론적으로 공학적 설계 과목에서 수여하는 A1 Championship in 2024 대회에서 performance prize를 수상하였다.
+이와 같이 실제로 차선을 인식하여 자율주행이 가능한 모델과 차량을 제작해보았으며,<br>
+결론적으로 공학적 설계 과목에서 수여하는 A1 Championship in 2024 대회에서 performance prize를 수상하였다.<br>
 (performance prize와 design prize 중 performance prize 수상)
 
 <div style="display: flex; justify-content: space-around;">
