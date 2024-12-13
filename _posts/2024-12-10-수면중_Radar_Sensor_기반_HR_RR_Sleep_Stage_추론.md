@@ -5,7 +5,7 @@ date: 2024-12-10 14:10:00 +0800
 categories: [UGRP]
 tags: [Review, UGRP, Research]
 render_with_liquid: false
-image: /assets/img/post/radar_sensor/flow.png
+image: /assets/img/post/radar_sensor/radar_graph.gif
 ---
 
 ## Introduction
