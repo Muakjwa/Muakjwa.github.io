@@ -41,10 +41,10 @@ image: /assets/img/post/radar_sensor/flow.png
 이 데이터셋은 수면이 이뤄질 때의 data를 의미하며, 이에 맞는 정확한 HR(심박), RR(호흡), Sleep stage label이 필요했다.
 
 ### Data
-radar의 paraemter에 따라 data의 값이 달라지고,
+radar의 paraemter에 따라 data의 값이 달라지고,<br>
 실제 수면상의 data이다 보니 dataset을 수집하는 것이 유일한 방법이였다.
 
-dataset을 수집하기 위해서 창업을 진행하는 팀에서 수면다원검사센터와 협약을 맺었으며,
+dataset을 수집하기 위해서 창업을 진행하는 팀에서 수면다원검사센터와 협약을 맺었으며,<br>
 실제 수면이 진행될 때, radar를 설치하여 radar dataset과 정확한 HR, RR, Sleep stage label을 동시에 얻을 수 있었다.
 
 실험 환경은 아래와 같이 구성되었다.
@@ -60,11 +60,11 @@ Radar를 통해 수집한 data를 바탕으로 심박, 호흡, 수면 stage를 �
 
 이를 위해서 가장 기본적인 방식으로는 신호처리 기법을 사용해서 분석하는 것이다.
 
-하지만 최근 AI가 발전하다보니 data를 바탕으로 신호처리 기법으로 의미 있는 부분을 추출한 후,
+하지만 최근 AI가 발전하다보니 data를 바탕으로 신호처리 기법으로 의미 있는 부분을 추출한 후,<br>
 해당 부분을 deep learning을 사용하여 분석할 수 있었다.
 
-이를 위해서 신호처리 기법으로 아래와 같은 flow를 통해 처리하였으며,
-처리된 data를 ResNet를 이용해 심박, 호흡을 판단하고,
+이를 위해서 신호처리 기법으로 아래와 같은 flow를 통해 처리하였으며,<br>
+처리된 data를 ResNet를 이용해 심박, 호흡을 판단하고,<br>
 해당 ResNet에서 추출된 feature를 GRU에 넣어 수면 stage를 판단할 수 있는 모델을 구성하였다.
 
 ![Preprocessing & AI Model]( /assets/img/post/radar_sensor/flow.png ){: .w-70}
@@ -81,8 +81,8 @@ Radar를 통해 수집한 data를 바탕으로 심박, 호흡, 수면 stage를 �
     <img src="/assets/img/post/radar_sensor/respiratoryrate.png" alt="RespiratoryRate" width="400"/>
 </div>
 
-하지만 sleep stage를 판단한 결과,
-잠에 들었는지 안들었는지는 90%이상의 정확도로 예측함을 확인했지만,
+하지만 sleep stage를 판단한 결과,<br>
+잠에 들었는지 안들었는지는 90%이상의 정확도로 예측함을 확인했지만,<br>
 sleep stage를 판단하는 일에 있어서 정확도가 낮게 나옴을 알 수 있었다.
 
 이 낮은 정확도는 심박수와 호흡수를 판단하는 과정에서부터 부족한 feature extraction 때문이라라 예상된다.
