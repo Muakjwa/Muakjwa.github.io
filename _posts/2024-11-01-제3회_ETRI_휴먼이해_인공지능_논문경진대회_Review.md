@@ -136,3 +136,6 @@ dataset에서 patch로 나뉜 data가 LSTM-AutoEncoder에 들어가고, LSTM-Aut
 
 performance에 더 집중하였다면, 더 높은 성적을 가질 수 있었겠지만, <br>
 새로운 process를 만드는 과정과 논리적 novelty를 논문으로 작성할 수 있었기에 후회는 없다!
+
+코드는 아래 링크에서 확인할 수 있다.
+<a href = "https://github.com/Muakjwa/Multi-Patching"> Github Link </a>
