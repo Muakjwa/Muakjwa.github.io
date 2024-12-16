@@ -75,7 +75,7 @@ calibration -> grayscale transform -> blurring -> Canny edge detection -> Hough 
 ## Result
 실제 환경에서 구동 영상은 아래와 같다.
 
-![Real World Driving of 4WS RL Car]( /assets/img/post/4WS_RL/self_driving.mp4 ){: .w-70}
+![Real World Driving of 4WS RL Car]( /assets/img/post/4WS_RL/self_driving.mp4 ){: width="300"}
 
 실제로 실패도 한번씩 하게 되지만, 그 외의 상황에서는 상당히 차선을 따라서 잘 주행하는 모습을 볼 수 있다.
 
