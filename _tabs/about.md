@@ -254,7 +254,7 @@ order: 1
     </h2>
     <div>
         <h3 class = 'h3_content'>
-        TOEIC: &emsp;&emsp;&ensp; 336/600 <span class="spacer"></span> valid : Feb.2025 &mdash; Feb.2027
+        TEPS: &emsp;&emsp;&ensp; 336/600 <span class="spacer"></span> valid : Feb.2025 &mdash; Feb.2027
         </h3>
         <h3 class = 'h3_content'>
         Language: &emsp; Python, C/C++
