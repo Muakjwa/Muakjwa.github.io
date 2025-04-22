@@ -229,6 +229,9 @@ order: 1
     </h2>
     <div>
         <h3 class = 'h3_content'>
+        KFAS 人才林 Scholarship <span class="spacer"></span> Feb.2025 &mdash; Feb.2026
+        </h3>
+        <h3 class = 'h3_content'>
         Encouragement Prize, The World Embedded Software Contest 2024, KESSIA <span class="spacer"></span> Nov.2024
         </h3>
         <h3 class = 'h3_content'>
@@ -251,7 +254,7 @@ order: 1
     </h2>
     <div>
         <h3 class = 'h3_content'>
-        TOEIC: &emsp;&emsp;&ensp; 810/990 <span class="spacer"></span> valid : Aug.2022 &mdash; Aug.2024
+        TOEIC: &emsp;&emsp;&ensp; 336/600 <span class="spacer"></span> valid : Feb.2025 &mdash; Feb.2027
         </h3>
         <h3 class = 'h3_content'>
         Language: &emsp; Python, C/C++
