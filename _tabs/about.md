@@ -139,9 +139,9 @@ order: 1
         Research Interest
     </h2>
     <h3 class = 'h3_content'>
-        &emsp; - Deep Learning <br>
         &emsp; - Representation Learning <br>
-        &emsp; - Efficient Data Compression
+        &emsp; - Efficient System <br>
+        &emsp; - Bio AI 
     </h3>
     <br>
     <h2 class = 'sub_title'>
@@ -181,15 +181,31 @@ order: 1
     </p>
     <br>
     <h2 class = 'sub_title'>
+    Work Experience
+    </h2>
+    <div>
+        <h3 class = 'h3_content'>
+        LG AI Research <span class="spacer"></span> Jul.2025 &mdash; May.2026
+        </h3>
+        &emsp; Bio Intelligence Lab - ML Engineer <br>
+    </div>
+    <br>
+    <h2 class = 'sub_title'>
     Publications
     </h2>
     <div class = "middle indent">
         * Equal contributor <br> 
     </div>
     <div>
-        <ol reversed start="2" class ="ol">
+        <ol reversed start="4" class ="ol">
             <li class = "middle li">
-                &emsp;Daewon Kim, <ins><b>Sunwoo Yu</b></ins>, Jaehyeon Lee and Seonghun Lee, “Development of a Driver Monitoring System Using the Capacitive Steering Wheel and FMCW Radar”, The Korean Institute of Communications and Information Sciences (KICS) Conference (Fall), Nov. <b>2024</b>. (Expected)
+                &emsp;Jong Hyun Kim, <ins><b>Sunwoo Yu</b></ins>, Soonyoung Lee, Tae Hyun Hwang, Jongseong Jang, Janghyeon Lee, “Benchmarking gene expression foundation models on bulk RNA-Seq data”, Proceedings of the American Association for Cancer Research (AACR), Abstract, Apr. <b>2026</b>.
+            </li>
+            <li class = "middle li">
+                &emsp;Juseung Yun, <ins><b>Sunwoo Yu</b></ins>,  Sumin Ha, Jonghyun Kim, Janghyeon Lee, Jongseong Jang, Soonyoung Lee, [Technical Report] “EXAONE Path 2.5: Pathology Foundation Model with Multi-Omics Alignment”, Arxiv, Dec. <b>2025</b>.
+            </li>
+            <li class = "middle li">
+                &emsp;Daewon Kim, <ins><b>Sunwoo Yu</b></ins>, Jaehyeon Lee and Seonghun Lee, “Development of a Driver Monitoring System Using the Capacitive Steering Wheel and FMCW Radar”, The Korean Institute of Communications and Information Sciences (KICS) Conference (Fall), Nov. <b>2024</b>.
             </li>
             <li class = "middle li">
                 &emsp;Jaehyeon Lee*, <ins><b>Sunwoo Yu</b></ins>*, Daewon Kim, and Kiwon Choi, “Multi-patching: life-log Classification with the Reconstructed Representation of Multivariate Time Series”, The 15th International Conference on ICT Convergence (ICTC 2024), pp. 798-803, Oct. <b>2024</b>.
