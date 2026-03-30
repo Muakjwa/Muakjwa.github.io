@@ -187,7 +187,17 @@ order: 1
         <h3 class = 'h3_content'>
         LG AI Research <span class="spacer"></span> Jul.2025 &mdash; May.2026
         </h3>
-        &emsp; Bio Intelligence Lab - ML Engineer <br>
+        &emsp; Bio Intelligence Lab, ML Engineer <br>
+        &ensp; <span class="small">
+        &#10003; Handled large-scale datasets (TB-scale), evaluation & inference pipelines
+        </span>
+        <h3 class = 'h3_content'>
+        Neuralscent <span class="spacer"></span> Mar.2024 &mdash; Dec.2024
+        </h3>
+        &emsp; Co-Founder <br>
+        &ensp; <span class="small">
+        &#10003; Built a radar-based sleep dataset and developed sleep stage detection AI model <br>
+        </span>
     </div>
     <br>
     <h2 class = 'sub_title'>
@@ -276,7 +286,7 @@ order: 1
         Language: &emsp; Python, C/C++
         </h3>
         <h3 class = 'h3_content'>
-        Tools: &emsp;&emsp;&emsp;Git, Docker, PyTorch, OpenAI Gym, ModusToolBox
+        Tools: &emsp;&emsp;&emsp;Git, Docker, PyTorch
         </h3>
     </div>
     <br>
