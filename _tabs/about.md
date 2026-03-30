@@ -209,7 +209,7 @@ order: 1
     <div>
         <ol reversed start="4" class ="ol">
             <li class = "middle li">
-                &emsp;Jong Hyun Kim, <ins><b>Sunwoo Yu</b></ins>, Soonyoung Lee, Tae Hyun Hwang, Jongseong Jang, Janghyeon Lee, “Benchmarking gene expression foundation models on bulk RNA-Seq data”, Proceedings of the American Association for Cancer Research (AACR), Abstract, Apr. <b>2026</b>. (expected)
+                &emsp;Jong Hyun Kim, <ins><b>Sunwoo Yu</b></ins>, Soonyoung Lee, Tae Hyun Hwang, Jongseong Jang, Janghyeon Lee, “Benchmarking gene expression foundation models on bulk RNA-Seq data”, Proceedings of the American Association for Cancer Research (AACR), Abstract, Apr. <b>2026</b>. (expected) 
             </li>
             <li class = "middle li">
                 &emsp;Juseung Yun, <ins><b>Sunwoo Yu</b></ins>,  Sumin Ha, Jonghyun Kim, Janghyeon Lee, Jongseong Jang, Soonyoung Lee, [Technical Report] “EXAONE Path 2.5: Pathology Foundation Model with Multi-Omics Alignment”, Arxiv, Dec. <b>2025</b>.
