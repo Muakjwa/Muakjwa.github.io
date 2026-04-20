@@ -135,14 +135,6 @@ order: 1
         </div>
         <!-- <a class="download" href="https://github.com/Muakjwa/Muakjwa.github.io/blob/main/_tabs/about.pdf" download = "sunwoo's_CV">Download</a> -->
     </div>
-    <h2 class = 'sub_title'>
-        Research Interest
-    </h2>
-    <h3 class = 'h3_content'>
-        &emsp; - Representation Learning <br>
-        &emsp; - Efficient System <br>
-        &emsp; - Bio AI 
-    </h3>
     <br>
     <h2 class = 'sub_title'>
         Personal Data
