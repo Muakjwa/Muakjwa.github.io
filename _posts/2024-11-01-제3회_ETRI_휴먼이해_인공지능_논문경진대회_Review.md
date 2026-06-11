@@ -118,7 +118,7 @@ dataset에서 patch로 나뉜 data가 LSTM-AutoEncoder에 들어가고, LSTM-Aut
 ![Memory Usage Efficiency & Optimal Intraperiod Patterns Lengths.]( ../assets/img/post/multi_patching/mem_f1_final.png ) -->
 
 ## Review of Contest
-결론적으로 이 대회에서는 <a href = "www.aitimes.kr/news/articleView.html?idxno=32492"> 장려상</a>을 차지하게 되었다!
+결론적으로 이 대회에서는 <a href = "https://www.aitimes.kr/news/articleView.html?idxno=32492"> 장려상</a>을 차지하게 되었다!
 
 <div style="display: flex; justify-content: space-around;">
     <img src="/assets/img/post/multi_patching/poster_presentation.jpg" alt="Poster Presentation" width="400"/>
