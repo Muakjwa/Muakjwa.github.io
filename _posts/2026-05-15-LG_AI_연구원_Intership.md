@@ -32,8 +32,8 @@ EXAONE Path는 giga-pixel 크기의 병리학 이미지인 whole slide image(WSI
 나는 모델의 성능을 입증하고 검증하는 evaluation·analysis·benchmark 체계 구축을 담당했다.
 EXAONE Path V2.5를 발표할 때 기존 모델들과 공정하게 비교하기 위해, public dataset 기반의 patho-bench 방식으로 개발 모델과 기존 모델들을 동일 선상에서 평가했다.
 또한 내부적으로 구축한 dataset을 활용해 public benchmark가 다루지 못하는 out-of-distribution case에 대한 평가까지 수행했다.
-이 기여를 통해 EXAONE Path V2.5의 <a href = "arxiv.org/abs/2512.14019"> Technical Report </a>에 2저자로 이름을 올릴 수 있었다.
-또한 LG에서 진행하는 <a href = "event.lgresearch.ai/"> LG AI Insight </a> 행사에서 "EXAONE Path 2.5: Pathology Foundation Model with Multi-Omics Alignment"라는 제목으로 포스터 세션 발표도 경험했다.
+이 기여를 통해 EXAONE Path V2.5의 <a href = "https://arxiv.org/abs/2512.14019"> Technical Report </a>에 2저자로 이름을 올릴 수 있었다.
+또한 LG에서 진행하는 <a href = "https://event.lgresearch.ai/"> LG AI Insight </a> 행사에서 "EXAONE Path 2.5: Pathology Foundation Model with Multi-Omics Alignment"라는 제목으로 포스터 세션 발표도 경험했다.
 
 <div style="display: flex; justify-content: space-around;">
     <img src="/assets/img/post/LG_AI_Research/exaonepathv25.gif" alt="EXAONE Path V2.5" width="400"/>
