@@ -1,7 +1,7 @@
 ---
 title: Depth Foveated Compression Review
 author: Sunwoo Yu
-date: 2024-11-16 14:10:00 +0800
+date: 2024-11-16 14:10:00 +0900
 categories: [Project]
 tags: [Review, Project, Research, Paper]
 render_with_liquid: false

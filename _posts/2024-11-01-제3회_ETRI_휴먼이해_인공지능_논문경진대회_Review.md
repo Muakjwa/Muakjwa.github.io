@@ -1,7 +1,7 @@
 ---
 title: 제3회 ETRI 휴먼이해 인공지능 논문경진대회 [Multi-patching] Review
 author: Sunwoo Yu
-date: 2024-11-01 14:10:00 +0800
+date: 2024-11-01 14:10:00 +0900
 categories: [Contest]
 tags: [Review, Contest, Research, Paper]
 render_with_liquid: false
@@ -118,7 +118,7 @@ dataset에서 patch로 나뉜 data가 LSTM-AutoEncoder에 들어가고, LSTM-Aut
 ![Memory Usage Efficiency & Optimal Intraperiod Patterns Lengths.]( ../assets/img/post/multi_patching/mem_f1_final.png ) -->
 
 ## Review of Contest
-결론적으로 이 대회에서는 장려상을 차지하게 되었다!
+결론적으로 이 대회에서는 <a href = "www.aitimes.kr/news/articleView.html?idxno=32492"> 장려상</a>을 차지하게 되었다!
 
 <div style="display: flex; justify-content: space-around;">
     <img src="/assets/img/post/multi_patching/poster_presentation.jpg" alt="Poster Presentation" width="400"/>

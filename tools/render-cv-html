@@ -1,0 +1,43 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+src="${1:-_tabs/about-ko.md}"
+out="${2:-/tmp/about-ko_tmp.html}"
+
+mkdir -p "$(dirname "$out")"
+
+{
+  printf '%s\n' '<!doctype html>'
+  printf '%s\n' '<html>'
+  printf '%s\n' '<head>'
+  printf '%s\n' '<meta charset="utf-8">'
+  printf '%s\n' '<meta name="viewport" content="width=device-width, initial-scale=1">'
+  awk '
+    BEGIN {
+      head_open = 1
+    }
+    NR == 1 && $0 == "---" {
+      front_matter = 1
+      next
+    }
+    front_matter && $0 == "---" {
+      front_matter = 0
+      next
+    }
+    !front_matter && head_open && $0 ~ /^<body[ >]/ {
+      print "</head>"
+      head_open = 0
+    }
+    !front_matter {
+      print
+    }
+    END {
+      if (head_open) {
+        print "</head>"
+      }
+    }
+  ' "$src"
+  printf '%s\n' '</html>'
+} > "$out"
+
+printf '%s\n' "$out"

@@ -199,9 +199,18 @@ order: 1
         * Equal contributor <br> 
     </div>
     <div>
-        <ol reversed start="4" class ="ol">
+        <ol reversed start="6" class ="ol">
+            <li class="middle li">
+                &emsp;Jong Hyun Kim, <ins><b>Sunwoo Yu</b></ins>, Juseung Yun, 
+                Minsoo Lee, Jongseong Jang, Janghyeon Lee, 
+                "Towards a whole-gene bulk transcriptomics foundation model", 
+                Nature Communications, <i>under review</i>, May. <b>2026</b>.
+            </li>
+            <li class="middle li">
+                &emsp;Minsoo Lee, Jonghyun Kim, Juseung Yun, <ins><b>Sunwoo Yu</b></ins>, Jongseong Jang, "MINT: Molecularly Informed Training with Spatial Transcriptomics Supervision for Pathology Foundation Models", Medical Image Computing and Computer Assisted Intervention (MICCAI), <i>under review</i>, Mar. <b>2026</b>.
+            </li>
             <li class = "middle li">
-                &emsp;Jong Hyun Kim, <ins><b>Sunwoo Yu</b></ins>, Soonyoung Lee, Tae Hyun Hwang, Jongseong Jang, Janghyeon Lee, “Benchmarking gene expression foundation models on bulk RNA-Seq data”, Proceedings of the American Association for Cancer Research (AACR), Abstract, Apr. <b>2026</b>. (expected) 
+                &emsp;Jong Hyun Kim, <ins><b>Sunwoo Yu</b></ins>, Soonyoung Lee, Tae Hyun Hwang, Jongseong Jang, Janghyeon Lee, “Benchmarking gene expression foundation models on bulk RNA-Seq data”, Proceedings of the American Association for Cancer Research (AACR), Abstract, Apr. <b>2026</b>.
             </li>
             <li class = "middle li">
                 &emsp;Juseung Yun, <ins><b>Sunwoo Yu</b></ins>,  Sumin Ha, Jonghyun Kim, Janghyeon Lee, Jongseong Jang, Soonyoung Lee, [Technical Report] “EXAONE Path 2.5: Pathology Foundation Model with Multi-Omics Alignment”, Arxiv, Dec. <b>2025</b>.

@@ -1,0 +1,58 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+src="${1:-_tabs/about-ko.md}"
+out="${2:-_tabs/about-ko.pdf}"
+
+mkdir -p .tmp/cv
+
+base="$(basename "$src")"
+html=".tmp/cv/${base%.md}.html"
+
+bash tools/render-cv-html "$src" "$html" >/dev/null
+
+chrome=""
+for candidate in \
+  "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" \
+  "/mnt/c/Program Files (x86)/Microsoft/Edge/Application/msedge.exe" \
+  google-chrome \
+  google-chrome-stable \
+  chromium \
+  chromium-browser
+do
+  if command -v "$candidate" >/dev/null 2>&1 || [[ -x "$candidate" ]]; then
+    chrome="$candidate"
+    break
+  fi
+done
+
+if [[ -z "$chrome" ]]; then
+  printf '%s\n' "Chrome/Edge를 찾지 못했습니다. 생성된 HTML을 브라우저에서 열어 PDF로 저장하세요:"
+  printf '%s\n' "$html"
+  exit 1
+fi
+
+abs_html="$(realpath "$html")"
+abs_out="$(realpath -m "$out")"
+
+if command -v wslpath >/dev/null 2>&1 && [[ "$chrome" == /mnt/c/* ]]; then
+  win_html="$(wslpath -w "$abs_html")"
+  win_out="$(wslpath -w "$abs_out")"
+  file_url="file:///$(printf '%s' "$win_html" | sed 's#\\#/#g; s# #%20#g')"
+  "$chrome" \
+    --headless \
+    --disable-gpu \
+    --allow-file-access-from-files \
+    --print-to-pdf="$win_out" \
+    "$file_url"
+else
+  file_url="file://$abs_html"
+  "$chrome" \
+    --headless \
+    --disable-gpu \
+    --allow-file-access-from-files \
+    --print-to-pdf="$abs_out" \
+    "$file_url"
+fi
+
+printf '%s\n' "$abs_out"
