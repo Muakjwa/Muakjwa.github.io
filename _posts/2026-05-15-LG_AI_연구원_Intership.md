@@ -56,4 +56,4 @@ EXAONE Path V2.5를 발표할 때 기존 모델들과 공정하게 비교하기 
 <div style="display: flex; justify-content: space-around;">
     <img src="/assets/img/post/LG_AI_Research/certificate.jpg" alt="certificate" width="400"/>
     <img src="/assets/img/post/LG_AI_Research/team_picture.jpg" alt="FM tech cell" width="400"/>
-</div>
+</div> 
