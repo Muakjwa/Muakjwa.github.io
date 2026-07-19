@@ -181,7 +181,8 @@ order: 1
         </h3>
         &emsp; Bio Intelligence Lab, ML Engineer <br>
         &ensp; <span class="small">
-        &#10003; Handled large-scale datasets (TB-scale), evaluation & inference pipelines
+        &#10003; Led evaluation and benchmarking for two foundation models — EXAONE Path 2.5 (pathology, giga-pixel WSIs) and a whole-gene bulk RNA-seq model — designing validation protocols and head-to-head comparisons against public benchmarks and competing models, including out-of-distribution cohorts [Pub. 6, 4, 2]
+        Built a daemon-driven automation framework chaining the three dependent training stages of EXAONE Path with automatic best-checkpoint selection, enabling unattended and reproducible experiments
         </span>
         <h3 class = 'h3_content'>
         Neuralscent <span class="spacer"></span> Mar.2024 &mdash; Dec.2024
