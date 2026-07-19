@@ -122,6 +122,19 @@ order: 1
         padding-left: 1em;
         text-indent: -2em;
     }
+
+    .cv-list {
+    margin: 2px 0 0 0;
+    padding-left: 1.6em;
+    line-height: 1.35;
+    }
+    .cv-list li {
+    margin: 0 0 2px 0;
+    list-style: none;
+    text-indent: -1.1em;
+    padding-left: 1.1em;
+    }
+    .cv-list li::before { content: "\2713\00a0"; }
 </style>
 
 <body class = "bodies">
@@ -180,17 +193,17 @@ order: 1
         LG AI Research <span class="spacer"></span> Jul.2025 &mdash; May.2026
         </h3>
         &emsp; Bio Intelligence Lab, ML Engineer <br>
-        &ensp; <span class="small">
-        &#10003; Led evaluation and benchmarking for two foundation models — EXAONE Path 2.5 (pathology, giga-pixel WSIs) and a whole-gene bulk RNA-seq model — designing validation protocols and head-to-head comparisons against public benchmarks and competing models, including out-of-distribution cohorts [Pub. 6, 4, 2]
-        Built a daemon-driven automation framework chaining the three dependent training stages of EXAONE Path with automatic best-checkpoint selection, enabling unattended and reproducible experiments
-        </span>
+        <ul class="cv-list small">
+        <li>Evaluation &amp; benchmarking lead, EXAONE Path 2.5 (pathology WSI) and bulk RNA-seq foundation models</li>
+        <li>Automated EXAONE Path three-stage training pipeline</li>
+        </ul>
         <h3 class = 'h3_content'>
         Neuralscent <span class="spacer"></span> Mar.2024 &mdash; Dec.2024
         </h3>
         &emsp; Co-Founder <br>
-        &ensp; <span class="small">
-        &#10003; Built a radar-based sleep dataset and developed sleep stage detection AI model <br>
-        </span>
+        <ul class="cv-list small">
+        <li> Built a radar-based sleep dataset and developed sleep stage detection AI model </li>
+        </ul>
     </div>
     <br>
     <h2 class = 'sub_title'>
