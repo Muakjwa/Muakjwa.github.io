@@ -215,7 +215,7 @@ order: 1
     <div>
         <ol reversed start="5" class ="ol">
             <li class="middle li">
-                &emsp;Minsoo Lee, Jonghyun Kim, Juseung Yun, <ins><b>Sunwoo Yu</b></ins>, Jongseong Jang, "MINT: Molecularly Informed Training with Spatial Transcriptomics Supervision for Pathology Foundation Models", Medical Image Computing and Computer Assisted Intervention (MICCAI), <i>under review</i>, Mar. <b>2026</b>.
+                &emsp;Minsoo Lee, Jonghyun Kim, Juseung Yun, <ins><b>Sunwoo Yu</b></ins>, Jongseong Jang, "MINT: Molecularly Informed Training with Spatial Transcriptomics Supervision for Pathology Foundation Models", Medical Image Computing and Computer Assisted Intervention (MICCAI), Sep. <b>2026</b>.
             </li>
             <li class = "middle li">
                 &emsp;Jong Hyun Kim, <ins><b>Sunwoo Yu</b></ins>, Soonyoung Lee, Tae Hyun Hwang, Jongseong Jang, Janghyeon Lee, “Benchmarking gene expression foundation models on bulk RNA-Seq data”, Proceedings of the American Association for Cancer Research (AACR), Abstract, Apr. <b>2026</b>.
