@@ -42,7 +42,7 @@ EXAONE Path V2.5를 발표할 때 기존 모델들과 공정하게 비교하기 
 
 ### Bulk RNA-seq Foundation Model
 이후에는 Bulk RNA-seq Foundation Model 개발에 참여했다.
-해당 연구는 현재 **Nature Communications**에 **under review** 중이며, 게재 이후 이 글에 상세한 내용을 업데이트할 예정이다.
+<!-- 해당 연구는 현재 **Nature Communications**에 **under review** 중이며, 게재 이후 이 글에 상세한 내용을 업데이트할 예정이다. -->
 
 
 ## Closing

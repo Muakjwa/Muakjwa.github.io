@@ -213,13 +213,7 @@ order: 1
         * Equal contributor <br> 
     </div>
     <div>
-        <ol reversed start="6" class ="ol">
-            <li class="middle li">
-                &emsp;Jong Hyun Kim, <ins><b>Sunwoo Yu</b></ins>, Juseung Yun, 
-                Minsoo Lee, Jongseong Jang, Janghyeon Lee, 
-                "Towards a whole-gene bulk transcriptomics foundation model", 
-                Nature Communications, <i>under review</i>, May. <b>2026</b>.
-            </li>
+        <ol reversed start="5" class ="ol">
             <li class="middle li">
                 &emsp;Minsoo Lee, Jonghyun Kim, Juseung Yun, <ins><b>Sunwoo Yu</b></ins>, Jongseong Jang, "MINT: Molecularly Informed Training with Spatial Transcriptomics Supervision for Pathology Foundation Models", Medical Image Computing and Computer Assisted Intervention (MICCAI), <i>under review</i>, Mar. <b>2026</b>.
             </li>
